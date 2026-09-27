@@ -6,6 +6,9 @@
 import { CLS, cellCenter } from './raster.js';
 
 export const EYE = 1.6; // m, eye height
+// POUH 'isovist %': share of view rays unobstructed within ISO_R (assumed
+// definition, matching the portfolio's 6.3 % enclosed amphitheatre … 85 % open cafe).
+export const ISO_R = 25;
 export const DEG = Math.PI / 180;
 
 // Site climate defaults: Ahmedabad (23.03 N), hot semi-arid (BSh).
@@ -31,7 +34,7 @@ export const FEATURES = [
   { key: 'gvi', label: 'Green view index', unit: '0–1', range: [0, 0.6] },
   { key: 'shade', label: 'Shading mask (10–17 h)', unit: '0–1', range: [0, 1] },
   { key: 'sunHours', label: 'Direct sun hours', unit: 'h', range: [0, 12] },
-  { key: 'isovistPct', label: 'Isovist % of 50 m disc', unit: '%', range: [0, 100] },
+  { key: 'isovistPct', label: 'Isovist % (clear rays ≤ 25 m)', unit: '%', range: [0, 100] },
   { key: 'utci', label: 'UTCI estimate', unit: '°C', range: [25, 55] },
   { key: 'wind', label: 'Pedestrian wind (mean)', unit: 'm/s', range: [0, 6] },
   { key: 'bcr', label: 'Ground coverage (50 m)', unit: '0–1', range: [0, 1] },
@@ -192,7 +195,7 @@ export function pointMetrics(g, x, y, opts = {}) {
   const sunPos = opts.sun || CLIMATE.hours.map((h) => sunPosition(climate.lat, climate.day, h));
 
   const dists = new Float32Array(rays);
-  let area = 0, area50 = 0, green = 0, water = 0, openRays = 0, activeHits = 0, bldHits = 0;
+  let area = 0, clear25 = 0, green = 0, water = 0, openRays = 0, activeHits = 0, bldHits = 0;
   const hitH = new Float32Array(rays);
   const dTheta = (2 * Math.PI) / rays;
   for (let r = 0; r < rays; r++) {
@@ -201,7 +204,7 @@ export function pointMetrics(g, x, y, opts = {}) {
     dists[r] = res.dist;
     hitH[r] = res.hitH;
     area += 0.5 * res.dist * res.dist * dTheta;
-    area50 += 0.5 * Math.min(res.dist, 50) ** 2 * dTheta;
+    if (res.dist >= ISO_R) clear25++;
     green += res.green;
     if (res.water) water++;
     if (res.hitK < 0) openRays++;
@@ -298,7 +301,7 @@ export function pointMetrics(g, x, y, opts = {}) {
     skylineVar,
     roadDist: Math.min(Math.sqrt(roadD2), 60),
     sunHours,
-    isovistPct: (100 * area50) / (Math.PI * 50 * 50),
+    isovistPct: (100 * clear25) / rays,
   };
 }
 
