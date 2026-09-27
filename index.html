@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f4ef" />
+    <title>UrbanLM Lite · Pursuit of Urban Happiness</title>
+    <meta name="description" content="Import a 3D urban model, pick spaces open for intervention, choose qualitative keywords, and generate public spaces with quantitative proof." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22%232f7d5b%22/%3E%3Cpath d=%22M16 2a14 14 0 0 1 0 28z%22 fill=%22%23f6f4ef%22/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◐</span>
+        <div>
+          <strong>UrbanLM Lite</strong>
+          <span class="sub">Pursuit of Urban Happiness · qualitative → quantitative</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span id="status" class="status" role="status">Loading…</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel steps" id="steps">
+        <nav class="tabs" role="tablist">
+          <button role="tab" data-tab="site" class="on">1 · Site</button>
+          <button role="tab" data-tab="select">2 · Select</button>
+          <button role="tab" data-tab="feel">3 · Feel</button>
+          <button role="tab" data-tab="results">4 · Results</button>
+        </nav>
+
+        <section data-pane="site" class="pane on">
+          <h2>Site model</h2>
+          <p class="hint">Default trial site: <b>Manek Chowk → Nagbhudar ni pol</b>, walled city of Ahmedabad (real OSM streets, procedural pol fabric).</p>
+          <div class="row">
+            <button id="loadDefault" class="btn">Load trial site</button>
+            <label class="btn primary file">Import 3D model<input id="fileInput" type="file" accept=".glb,.gltf,.obj,.stl,.geojson,.json" hidden /></label>
+          </div>
+          <p class="hint small">.glb / .gltf / .obj / .stl (auto Z-up and unit detection) or GeoJSON (OSM exports: buildings with height/levels, highways, trees).</p>
+          <div id="classifyBox" hidden>
+            <h3>Automatic classification</h3>
+            <p class="hint small">Deterministic rules (names → geometry → normals). Change any class, then apply.</p>
+            <div id="classSummary" class="chips"></div>
+            <div id="classList" class="classlist"></div>
+            <button id="applyClass" class="btn primary">Apply classification</button>
+          </div>
+          <div id="siteInfo" class="card"></div>
+        </section>
+
+        <section data-pane="select" class="pane">
+          <h2>Spaces open for intervention</h2>
+          <div class="seg" role="group" aria-label="Selection mode">
+            <button data-mode="orbit" class="on">Orbit</button>
+            <button data-mode="pick">Pick</button>
+            <button data-mode="draw">Draw zone</button>
+          </div>
+          <p class="hint small" id="modeHint">Orbit: drag to rotate, scroll/pinch to zoom.</p>
+          <div class="row">
+            <button id="finishZone" class="btn" hidden>Finish zone</button>
+            <button id="suggestBuildings" class="btn">Open nearby buildings</button>
+            <button id="clearSel" class="btn ghost">Clear</button>
+          </div>
+          <div class="card" id="selInfo"></div>
+          <details class="card">
+            <summary>POUH site-selection rules (portfolio p. 34)</summary>
+            <ol class="small" id="siteRules"></ol>
+          </details>
+        </section>
+
+        <section data-pane="feel" class="pane">
+          <h2>How should it feel?</h2>
+          <p class="hint small">Pick qualitative keywords and how much of each you want. The engine matches these intensities, not just maximising them.</p>
+          <div id="keywords" class="keywords"></div>
+          <label class="field">POUH strategy
+            <select id="combo">
+              <option value="">Auto (optimiser chooses)</option>
+            </select>
+          </label>
+          <div class="row">
+            <label class="field">Seed <input id="seed" type="number" value="42" min="1" /></label>
+            <label class="field">Effort
+              <select id="effort">
+                <option value="fast">Fast (phone)</option>
+                <option value="normal" selected>Normal</option>
+                <option value="deep">Deep</option>
+              </select>
+            </label>
+          </div>
+          <button id="run" class="btn primary big">Generate spaces</button>
+          <div id="progress" class="progress" hidden><div class="bar"></div><span></span></div>
+        </section>
+
+        <section data-pane="results" class="pane">
+          <h2>Results</h2>
+          <div id="results"><p class="hint">Run the generator to see variants and their proof.</p></div>
+        </section>
+      </aside>
+
+      <section class="viewport">
+        <div id="viewer"></div>
+        <div class="legend" id="legend"></div>
+        <div class="heatbar" id="heatbar" hidden></div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

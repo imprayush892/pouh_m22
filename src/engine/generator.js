@@ -156,18 +156,35 @@ export function decode(genome, ctx) {
     if (!info.used) return;
 
     // Step 1: rectangle with the required area (bounded by the zone).
+    // Available land = the open zone + footprints of buildings the user opened
+    // within 15 m of it (they may be cleared, POUH p. 39).
+    let avail = zArea;
+    const reach = [];
+    for (const bi of buildings) {
+      const [bx, by] = polygonCentroid(site.buildings[bi].footprint);
+      if (Math.min(...zone.polygon.map(([px, py]) => Math.hypot(px - bx, py - by))) < 15 || pointInPolygon(bx, by, zone.polygon)) {
+        avail += polygonArea(site.buildings[bi].footprint);
+        reach.push([bx, by]);
+      }
+    }
     const want = lerp(combo.area[0], combo.area[1], genes.area);
-    const A = Math.min(want, zArea * 0.92);
-    const aspect = Math.max(1, Math.min(3, rect.length / Math.max(rect.width, 1)));
-    const L = Math.min(rect.length * 0.95, Math.sqrt(A * aspect));
-    const Wd = Math.min(rect.width * 0.95, A / L);
+    const A = Math.min(want, avail * 0.9);
+    const aspect = Math.max(1, Math.min(2.5, rect.length / Math.max(rect.width, 1)));
+    const L = Math.sqrt(A * aspect);
+    const Wd = A / L;
     // Aligned with the zone's long axis; near-square zones may turn 90°.
     const turn = genes.angle >= 0.5 && aspect < 1.4;
-    const frame = { cx, cy, angle: rect.angle + (turn ? Math.PI / 2 : 0) };
+    let fx = cx, fy = cy;
+    if (reach.length && A > zArea) {
+      const rx = reach.reduce((q, p) => q + p[0], 0) / reach.length, ry = reach.reduce((q, p) => q + p[1], 0) / reach.length;
+      const t = Math.min(0.6, 1 - zArea / A);
+      fx = cx + (rx - cx) * t; fy = cy + (ry - cy) * t;
+    }
+    const frame = { cx: fx, cy: fy, angle: rect.angle + (turn ? Math.PI / 2 : 0) };
     info.interventionArea = L * Wd;
     // Buildings the user opened for intervention that fall inside the
     // intervention rectangle are cleared (POUH Experiment-1 placement, p. 39).
-    const rectPoly = boxPolygon({ cx, cy, w: L, d: Wd, angle: frame.angle });
+    const rectPoly = boxPolygon({ cx: frame.cx, cy: frame.cy, w: L, d: Wd, angle: frame.angle });
     info.rect = rectPoly;
     for (const bi of buildings) {
       const b = site.buildings[bi];
@@ -183,9 +200,10 @@ export function decode(genome, ctx) {
       u += len;
     });
     // Clip primitives to the zone polygon (centre test).
-    out.boxes = out.boxes.filter((b) => pointInPolygon(b.cx, b.cy, zone.polygon) || b.zone !== undefined);
-    out.trees = out.trees.filter((t) => pointInPolygon(t.x, t.y, zone.polygon) || t.zone !== undefined);
-    out.seats = out.seats.filter((s) => pointInPolygon(s.x, s.y, zone.polygon) || s.zone !== undefined);
+    const inside = (x, y) => pointInPolygon(x, y, zone.polygon) || (A > zArea && pointInPolygon(x, y, rectPoly));
+    out.boxes = out.boxes.filter((b) => b.zone !== undefined || inside(b.cx, b.cy));
+    out.trees = out.trees.filter((t) => t.zone !== undefined || inside(t.x, t.y));
+    out.seats = out.seats.filter((q) => q.zone !== undefined || inside(q.x, q.y));
     for (const arr of [out.boxes, out.trees, out.seats]) for (const o of arr) if (o.zone === undefined) o.zone = zi;
   });
 
@@ -207,6 +225,7 @@ export function decode(genome, ctx) {
     out.buildingEdits.push({
       index: bi,
       demolish: cleared.has(bi) || g[2] > 0.85,
+      reason: cleared.has(bi) ? 'intervention' : g[2] > 0.85 ? 'gene' : undefined,
       height: Math.max(1, floors + delta) * 3.2,
       active: g[1] > 0.5 || !!b.active,
     });
@@ -253,6 +272,8 @@ export function applyDesign(baseGrid, site, design) {
 // Rough intervention cost used as an Occam penalty (prefer fewer changes).
 export function designCost(design) {
   let c = design.boxes.length * 0.2 + design.trees.length * 0.05;
-  for (const e of design.buildingEdits) c += e.demolish ? 3 : 0;
+  // Clearing inside a POUH intervention footprint is part of the programme
+  // (cheap); stand-alone demolition elsewhere is expensive.
+  for (const e of design.buildingEdits) c += e.demolish ? (e.reason === 'intervention' ? 0.4 : 2.5) : 0;
   return c;
 }
