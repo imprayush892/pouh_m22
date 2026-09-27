@@ -67,7 +67,21 @@ function measureSite(meta) {
   }
   let openCells = 0;
   for (let k = 0; k < mask.length; k++) if (mask[k] && g.cls[k] !== CLS.BUILDING) openCells++;
-  return { key: meta.key, points: pts.length, stats, quality: { ...site.quality, openShare: round(openCells / mask.reduce((a, b) => a + b, 0)) } };
+  // OSM completeness gate: sparse mapping makes a dense place look open.
+  let c100 = 0, b100 = 0;
+  for (let j = 0; j < g.ny; j++) for (let i = 0; i < g.nx; i++) {
+    const x = g.x0 + (i + 0.5) * g.cell, y = g.y0 + (j + 0.5) * g.cell;
+    if (x * x + y * y > 100 * 100) continue;
+    c100++;
+    if (g.cls[j * g.nx + i] === CLS.BUILDING) b100++;
+  }
+  const coverage100 = b100 / (c100 || 1);
+  const nb = site.quality.buildings;
+  const grade = nb >= 40 && coverage100 >= 0.15 ? 'good' : nb >= 15 && coverage100 >= 0.08 ? 'fair' : 'poor';
+  return {
+    key: meta.key, points: pts.length, stats,
+    quality: { ...site.quality, openShare: round(openCells / mask.reduce((a, b) => a + b, 0)), coverage100: round(coverage100), grade },
+  };
 }
 
 const metrics = [];
@@ -100,7 +114,8 @@ writeFileSync(`${dir}/study_vectors.jsonl`, vectors.map((v) => JSON.stringify(v)
 // does it fall inside the lexicon's full-score range?
 const check = {};
 for (const [kw, def] of Object.entries(KEYWORDS)) {
-  const vs = vectors.filter((v) => v.outcomes.some((o) => (OUTCOME_TO_KEYWORDS[o] || []).includes(kw)));
+  // Only sites whose OSM mapping passes the completeness gate.
+  const vs = vectors.filter((v) => v.quality.grade !== 'poor' && v.outcomes.some((o) => (OUTCOME_TO_KEYWORDS[o] || []).includes(kw)));
   check[kw] = { sites: vs.length, terms: [] };
   for (const t of def.terms) {
     const i = FEATURE_KEYS.indexOf(t.f);
@@ -116,7 +131,9 @@ for (const [kw, def] of Object.entries(KEYWORDS)) {
   }
 }
 writeFileSync(`${dir}/lexicon_check.json`, JSON.stringify(check, null, 1));
-console.log(`sites measured: ${metrics.filter((m) => !m.skipped).length}/${sites.length}; vectors: ${vectors.length}`);
+const grades = {};
+for (const m of metrics) if (m.quality?.grade) grades[m.quality.grade] = (grades[m.quality.grade] || 0) + 1;
+console.log(`sites measured: ${metrics.filter((m) => !m.skipped).length}/${sites.length}; OSM quality ${JSON.stringify(grades)}; vectors: ${vectors.length}`);
 for (const [kw, c] of Object.entries(check)) {
   if (!c.sites) continue;
   console.log(kw.padEnd(12), `${c.sites} sites`, c.terms.slice(0, 6).map((t) => `${t.f} med ${t.measured.median} in-core ${Math.round(t.insideCore * 100)}%`).join(' | '));
