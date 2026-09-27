@@ -110,9 +110,36 @@ export function findOpenSpaces(grid, { minArea = 60, maxArea = 6000 } = {}) {
       }
     }
     const area = comp.length * cellA;
-    if (area < minArea || area > maxArea) continue;
+    if (area < minArea) continue;
+    if (area > maxArea) {
+      // Large open ground (plazas, open imported sites): tile into ~30 × 30 m
+      // candidates, about one POUH programme (650–855 m²).
+      out.push(...tileComponent(grid, comp, 30));
+      continue;
+    }
     const pts = comp.map((k) => [grid.x0 + ((k % grid.nx) + 0.5) * grid.cell, grid.y0 + (((k / grid.nx) | 0) + 0.5) * grid.cell]);
     out.push({ id: `z${out.length}`, polygon: convexHull(pts), area });
   }
   return out.sort((a, b) => b.area - a.area);
+}
+
+function tileComponent(grid, comp, T) {
+  const set = new Set(comp);
+  const n = Math.max(1, Math.round(T / grid.cell));
+  let i0 = Infinity, j0 = Infinity, i1 = -Infinity, j1 = -Infinity;
+  for (const k of comp) {
+    const i = k % grid.nx, j = (k / grid.nx) | 0;
+    if (i < i0) i0 = i; if (i > i1) i1 = i; if (j < j0) j0 = j; if (j > j1) j1 = j;
+  }
+  const tiles = [];
+  for (let j = j0; j + n - 1 <= j1; j += n) {
+    for (let i = i0; i + n - 1 <= i1; i += n) {
+      let c = 0;
+      for (let jj = j; jj < j + n; jj++) for (let ii = i; ii < i + n; ii++) if (set.has(jj * grid.nx + ii)) c++;
+      if (c < 0.85 * n * n) continue;
+      const x0 = grid.x0 + i * grid.cell, y0 = grid.y0 + j * grid.cell, s = n * grid.cell;
+      tiles.push({ id: `t${i}_${j}`, polygon: [[x0, y0], [x0 + s, y0], [x0 + s, y0 + s], [x0, y0 + s]], area: c * grid.cell * grid.cell, tile: true });
+    }
+  }
+  return tiles;
 }
