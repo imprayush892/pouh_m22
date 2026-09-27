@@ -12,7 +12,8 @@ export const DEG = Math.PI / 180;
 export const CLIMATE = {
   lat: 23.03,
   day: 111, // 21 April, pre-monsoon design day
-  hours: [9, 12, 15, 17], // local solar time
+  hours: [6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], // local solar time, hourly
+  hotHours: [10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5], // POUH shading-mask window
   airTemp: 40, // °C, typical April afternoon
   windDir: 225, // deg, prevailing SW (meteorological: wind FROM)
   windRef: 4.0, // m/s at 10 m
@@ -28,7 +29,9 @@ export const FEATURES = [
   { key: 'enclosureHW', label: 'Enclosure H/W', unit: 'ratio', range: [0, 5] },
   { key: 'svf', label: 'Sky view factor', unit: '0–1', range: [0, 1] },
   { key: 'gvi', label: 'Green view index', unit: '0–1', range: [0, 0.6] },
-  { key: 'shade', label: 'Solar shade (design day)', unit: '0–1', range: [0, 1] },
+  { key: 'shade', label: 'Shading mask (10–17 h)', unit: '0–1', range: [0, 1] },
+  { key: 'sunHours', label: 'Direct sun hours', unit: 'h', range: [0, 12] },
+  { key: 'isovistPct', label: 'Isovist % of 50 m disc', unit: '%', range: [0, 100] },
   { key: 'utci', label: 'UTCI estimate', unit: '°C', range: [25, 55] },
   { key: 'wind', label: 'Pedestrian wind (mean)', unit: 'm/s', range: [0, 6] },
   { key: 'bcr', label: 'Ground coverage (50 m)', unit: '0–1', range: [0, 1] },
@@ -189,7 +192,7 @@ export function pointMetrics(g, x, y, opts = {}) {
   const sunPos = opts.sun || CLIMATE.hours.map((h) => sunPosition(climate.lat, climate.day, h));
 
   const dists = new Float32Array(rays);
-  let area = 0, green = 0, water = 0, openRays = 0, activeHits = 0, bldHits = 0;
+  let area = 0, area50 = 0, green = 0, water = 0, openRays = 0, activeHits = 0, bldHits = 0;
   const hitH = new Float32Array(rays);
   const dTheta = (2 * Math.PI) / rays;
   for (let r = 0; r < rays; r++) {
@@ -198,6 +201,7 @@ export function pointMetrics(g, x, y, opts = {}) {
     dists[r] = res.dist;
     hitH[r] = res.hitH;
     area += 0.5 * res.dist * res.dist * dTheta;
+    area50 += 0.5 * Math.min(res.dist, 50) ** 2 * dTheta;
     green += res.green;
     if (res.water) water++;
     if (res.hitK < 0) openRays++;
@@ -240,9 +244,15 @@ export function pointMetrics(g, x, y, opts = {}) {
   const horMean = hor.reduce((s, v) => s + v, 0) / nH;
   const skylineVar = Math.sqrt(hor.reduce((s, v) => s + (v - horMean) ** 2, 0) / nH);
 
-  let sunTrans = 0;
-  for (const s of sunPos) sunTrans += sunBlocked(g, x, y, s);
-  const shade = 1 - sunTrans / sunPos.length;
+  // POUH measures: sun hours = Σ hourly transmissivity; shading mask = shaded
+  // share of the hot window 10–17 h (portfolio pp. 19–32).
+  let sunHours = 0, hotTrans = 0, hotN = 0;
+  for (let h = 0; h < sunPos.length; h++) {
+    const tr = sunBlocked(g, x, y, sunPos[h]);
+    sunHours += tr;
+    if (climate.hotHours.includes(climate.hours[h])) { hotTrans += tr; hotN++; }
+  }
+  const shade = 1 - hotTrans / Math.max(hotN, 1);
 
   const wind = windAt(g, x, y, climate);
   const utci = utciEstimate(climate.airTemp, shade, svf, wind);
@@ -287,6 +297,8 @@ export function pointMetrics(g, x, y, opts = {}) {
     waterView: water / rays,
     skylineVar,
     roadDist: Math.min(Math.sqrt(roadD2), 60),
+    sunHours,
+    isovistPct: (100 * area50) / (Math.PI * 50 * 50),
   };
 }
 

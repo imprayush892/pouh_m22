@@ -33,6 +33,7 @@ export const SOURCES = {
   iso12913: 'ISO/TS 12913-2 (2018) Soundscape: pleasantness–eventfulness; road-traffic sound lowers pleasantness.',
   taylor2011: 'Taylor et al. (2011) Perceptual and physiological responses to fractals; skyline D 1.3–1.5 preferred.',
   whyte1980: 'Whyte (1980) The Social Life of Small Urban Spaces (sittable space, water, trees, food).',
+  pouh2022: 'Shah (2022) Pursuit of Urban Happiness, Generative Techniques for Urban Place Making (UR2001), CEPT University: 8 measured happy places, programme rules, strategy bands.',
   matsuda2002: 'Matsuda et al. (2002) Collective form of buildings and outdoor spaces in Manek Chowk area, Ahmedabad.',
 };
 
@@ -53,6 +54,10 @@ export const KEYWORDS = {
       { f: 'seating', t: T(0, 3, 30, INF), w: 0.6, src: ['whyte1980', 'mehta2007'] },
       { f: 'isovistArea', t: T(80, 300, 2500, 6000), w: 0.5, src: ['wiener2007', 'gehl1987'] },
       { f: 'roadDist', t: T(2, 12, INF, INF), w: 0.4, src: ['iso12913', 'quercia2014'] },
+      // POUH happy-place envelope (p. 19–26): min–max outer, interquartile core.
+      { f: 'sunHours', t: T(5.5, 6.9, 10.5, 12), w: 0.7, src: ['pouh2022'] },
+      { f: 'isovistPct', t: T(4, 24, 56, 90), w: 0.6, src: ['pouh2022', 'wiener2007'] },
+      { f: 'shade', t: T(0.4, 0.5, 0.91, 1.01), w: 0.7, src: ['pouh2022'] },
     ],
   },
   calm: {
@@ -168,6 +173,18 @@ export const KEYWORDS = {
       { f: 'wind', t: T(-INF, -INF, 2.2, 3.3), w: 0.4, src: ['lawson2001'] },
     ],
   },
+};
+
+KEYWORDS.active = {
+  label: 'Active / playful',
+  blurb: 'Room to move and play: open, sunny, visible spaces (POUH gym + plaza + kids combination).',
+  terms: [
+    { f: 'isovistPct', t: T(40, 60, 85, 100), w: 1.0, src: ['pouh2022'] },
+    { f: 'sunHours', t: T(8, 10, 12, 13), w: 0.8, src: ['pouh2022'] },
+    { f: 'shade', t: T(0.3, 0.45, 0.6, 0.8), w: 0.8, src: ['pouh2022'] },
+    { f: 'openness', t: T(0.05, 0.2, 1, INF), w: 0.5, src: ['franz2005'] },
+    { f: 'utci', t: T(-INF, -INF, 34, 40), w: 0.5, src: ['brode2012'] },
+  ],
 };
 
 export const KEYWORD_KEYS = Object.keys(KEYWORDS);
