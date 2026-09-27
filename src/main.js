@@ -84,17 +84,19 @@ worker.onmessage = (e) => {
 // ------------------------------------------------------------------ site
 async function loadDefault() {
   setStatus('Loading trial site…');
-  const [site, model, rows, evidence, matrix] = await Promise.all([
+  const [site, model, rows, evidence, matrix, studySites] = await Promise.all([
     fetch('./data/site-manek-chowk.json').then((r) => r.json()),
     fetch('./models/gbt.json').then((r) => r.json()),
     fetch('./models/training-rows.json').then((r) => r.json()),
     fetch('./data/evidence.json').then((r) => r.json()).catch(() => null),
     fetch('./data/evidence-matrix.json').then((r) => r.json()).catch(() => null),
+    fetch('./data/study-sites.json').then((r) => r.json()).catch(() => null),
   ]);
   state.model = model;
   state.trainingRows = rows.rows;
   state.evidence = evidence;
   state.matrix = matrix;
+  state.studySites = studySites;
   setSite(site);
 }
 
@@ -400,12 +402,21 @@ function renderProof() {
     ${(p.model?.items || []).slice(0, 8).map((d) => `<div class="contrib"><span>${esc(FEATURE[d.feature].label)}</span><div class="axis"><div class="${d.contribution >= 0 ? 'pos' : 'neg'}" style="width:${(Math.abs(d.contribution) / maxC) * 50}%"></div></div><span class="num">${d.contribution >= 0 ? '+' : ''}${fmt(d.contribution, 1)}</span></div>`).join('')}
     <h4>Qualitative → quantitative rules</h4>
     <p class="small muted">Weight = curated weight × corpus factor. “Corpus” = papers (of ${state.matrix?.summary?.relevant ?? '–'} relevant) whose findings point the same way / the opposite way.</p>
-    <table><tr><th>Parameter</th><th class="num">Value</th><th class="num">Target</th><th class="num">Fit</th><th class="num">Weight</th><th class="num">Corpus</th><th>Sources</th></tr>
-    ${p.prior.map((t) => `<tr><td>${esc(FEATURE[t.feature].label)}${t.corpus?.added ? ' <sup class="tag">corpus</sup>' : ''}</td><td class="num">${fmt(t.value, 2)}</td><td class="num">${rangeText(t.target)}</td><td class="num ${t.membership > 0.7 ? 'ok' : t.membership < 0.3 ? 'no' : ''}">${fmt(t.membership * 100, 0)}%</td><td class="num">${fmt(t.weight * 100, 0)}%</td><td class="num ${t.corpus?.conflict ? 'no' : ''}">${t.corpus ? `${fmt(t.corpus.support, 0)}${t.corpus.against ? ` / ${t.corpus.against}` : ''}${t.corpus.conflict ? ' ⚠' : ''}` : '–'}</td><td class="small">${t.sources.map((s) => `<span title="${esc(SOURCES[s] || s)}">${esc(s)}</span>`).join(', ')}</td></tr>`).join('')}</table>
+    <table><tr><th>Parameter</th><th class="num">Value</th><th class="num">Target</th><th class="num">Fit</th><th class="num">Weight</th><th class="num">Corpus</th><th class="num">Study sites</th><th>Sources</th></tr>
+    ${p.prior.map((t) => `<tr><td>${esc(FEATURE[t.feature].label)}${t.corpus?.added ? ' <sup class="tag">corpus</sup>' : ''}</td><td class="num">${fmt(t.value, 2)}</td><td class="num">${rangeText(t.target)}</td><td class="num ${t.membership > 0.7 ? 'ok' : t.membership < 0.3 ? 'no' : ''}">${fmt(t.membership * 100, 0)}%</td><td class="num">${fmt(t.weight * 100, 0)}%</td><td class="num ${t.corpus?.conflict ? 'no' : ''}">${t.corpus ? `${fmt(t.corpus.support, 0)}${t.corpus.against ? ` / ${t.corpus.against}` : ''}${t.corpus.conflict ? ' ⚠' : ''}` : '–'}</td>${siteCell(k, t.feature)}<td class="small">${t.sources.map((s) => `<span title="${esc(SOURCES[s] || s)}">${esc(s)}</span>`).join(', ')}</td></tr>`).join('')}</table>
     ${corpusSection(k)}
     ${ev ? `<h4>Evidence from the corpus (${ev.stats.papers} papers, TF-IDF + LSA)</h4>
       <ol class="refs">${refs(ev.evidence[k])}</ol>
       ${topFeatures.map((q) => `<p class="small muted">On ${esc(q.replace('f_', '').toUpperCase())}:</p><ol class="refs">${refs(ev.evidence[q]).split('</li>').slice(0, 3).join('</li>')}</ol>`).join('')}` : ''}`;
+}
+
+// Physical condition measured with this engine at geolocated study sites of
+// papers on this keyword (OSM geometry, completeness-graded).
+function siteCell(k, f) {
+  const t = state.studySites?.check?.[k]?.terms?.find((x) => x.f === f);
+  if (!t) return '<td class="num muted">–</td>';
+  const m = t.measured;
+  return `<td class="num" title="${m.n} study sites · p25–p75 ${fmt(m.p25, 2)}–${fmt(m.p75, 2)} · ${fmt(t.insideCore * 100, 0)}% inside the full-score range">${fmt(m.median, 2)}<div class="small muted">${fmt(m.p25, 1)}–${fmt(m.p75, 1)} · n ${m.n}</div></td>`;
 }
 
 // What the mined corpus says about a keyword, including parameters the

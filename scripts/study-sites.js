@@ -138,3 +138,15 @@ for (const [kw, c] of Object.entries(check)) {
   if (!c.sites) continue;
   console.log(kw.padEnd(12), `${c.sites} sites`, c.terms.slice(0, 6).map((t) => `${t.f} med ${t.measured.median} in-core ${Math.round(t.insideCore * 100)}%`).join(' | '));
 }
+
+// Compact bundle for the app (proof panel column + site list).
+const appBundle = {
+  note: 'Engine-measured physical condition at geolocated study sites of corpus papers (OSM, 200 m; sampled within 60 m). Same design day and air temperature everywhere, so values compare form, not local climate.',
+  check,
+  sites: metrics.filter((m) => !m.skipped).map((m) => ({
+    key: m.key, name: m.name, city: m.city, country: m.country, lat: +m.lat.toFixed(5), lon: +m.lon.toFixed(5), type: m.type,
+    grade: m.quality.grade, buildings: m.quality.buildings, heightTagged: round(m.quality.heightTagged, 2), papers: m.papers,
+    median: Object.fromEntries(FEATURE_KEYS.map((k) => [k, m.stats[k].median])),
+  })),
+};
+writeFileSync(`${dir}/study_sites_app.json`, JSON.stringify(appBundle));
