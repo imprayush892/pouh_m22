@@ -401,7 +401,7 @@ function renderProof() {
     <p class="small muted">Contribution of each parameter to the score (Saabas path attribution; bars sum to prediction − ${fmt(p.model?.bias, 0)} baseline).</p>
     ${(p.model?.items || []).slice(0, 8).map((d) => `<div class="contrib"><span>${esc(FEATURE[d.feature].label)}</span><div class="axis"><div class="${d.contribution >= 0 ? 'pos' : 'neg'}" style="width:${(Math.abs(d.contribution) / maxC) * 50}%"></div></div><span class="num">${d.contribution >= 0 ? '+' : ''}${fmt(d.contribution, 1)}</span></div>`).join('')}
     <h4>Qualitative → quantitative rules</h4>
-    <p class="small muted">Weight = curated weight × corpus factor. “Corpus” = papers (of ${state.matrix?.summary?.relevant ?? '–'} relevant) whose findings point the same way / the opposite way.</p>
+    <p class="small muted">Study sites = median (p25–p75) measured by this engine on OSM geometry at geolocated sites of papers on this keyword; * = low OSM reliability (e.g. street trees rarely mapped). Weight = curated weight × corpus factor. “Corpus” = papers (of ${state.matrix?.summary?.relevant ?? '–'} relevant) whose findings point the same way / the opposite way.</p>
     <table><tr><th>Parameter</th><th class="num">Value</th><th class="num">Target</th><th class="num">Fit</th><th class="num">Weight</th><th class="num">Corpus</th><th class="num">Study sites</th><th>Sources</th></tr>
     ${p.prior.map((t) => `<tr><td>${esc(FEATURE[t.feature].label)}${t.corpus?.added ? ' <sup class="tag">corpus</sup>' : ''}</td><td class="num">${fmt(t.value, 2)}</td><td class="num">${rangeText(t.target)}</td><td class="num ${t.membership > 0.7 ? 'ok' : t.membership < 0.3 ? 'no' : ''}">${fmt(t.membership * 100, 0)}%</td><td class="num">${fmt(t.weight * 100, 0)}%</td><td class="num ${t.corpus?.conflict ? 'no' : ''}">${t.corpus ? `${fmt(t.corpus.support, 0)}${t.corpus.against ? ` / ${t.corpus.against}` : ''}${t.corpus.conflict ? ' ⚠' : ''}` : '–'}</td>${siteCell(k, t.feature)}<td class="small">${t.sources.map((s) => `<span title="${esc(SOURCES[s] || s)}">${esc(s)}</span>`).join(', ')}</td></tr>`).join('')}</table>
     ${corpusSection(k)}
@@ -416,7 +416,8 @@ function siteCell(k, f) {
   const t = state.studySites?.check?.[k]?.terms?.find((x) => x.f === f);
   if (!t) return '<td class="num muted">–</td>';
   const m = t.measured;
-  return `<td class="num" title="${m.n} study sites · p25–p75 ${fmt(m.p25, 2)}–${fmt(m.p75, 2)} · ${fmt(t.insideCore * 100, 0)}% inside the full-score range">${fmt(m.median, 2)}<div class="small muted">${fmt(m.p25, 1)}–${fmt(m.p75, 1)} · n ${m.n}</div></td>`;
+  const weak = /^(low|none)/.test(t.reliability || '');
+  return `<td class="num ${weak ? 'muted' : ''}" title="${m.n} study sites · p25–p75 ${fmt(m.p25, 2)}–${fmt(m.p75, 2)} · ${fmt(t.insideCore * 100, 0)}% inside the full-score range · OSM reliability: ${esc(t.reliability || '?')}">${fmt(m.median, 2)}${weak ? '*' : ''}<div class="small muted">${fmt(m.p25, 1)}–${fmt(m.p75, 1)} · n ${m.n}</div></td>`;
 }
 
 // What the mined corpus says about a keyword, including parameters the

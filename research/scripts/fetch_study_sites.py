@@ -27,7 +27,7 @@ TITLE: %s
 ABSTRACT: %s"""
 
 UA = {'User-Agent': 'UrbanLM-Lite research (github.com/imprayush892/pouh_m22)'}
-OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter']
+OVERPASS = ['https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter']
 
 
 def overpass_query(lat, lon, r=200):

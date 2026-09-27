@@ -139,8 +139,20 @@ for (const [kw, c] of Object.entries(check)) {
   console.log(kw.padEnd(12), `${c.sites} sites`, c.terms.slice(0, 6).map((t) => `${t.f} med ${t.measured.median} in-core ${Math.round(t.insideCore * 100)}%`).join(' | '));
 }
 
+// How far each parameter can be trusted when measured from OSM alone.
+const RELIABILITY = {
+  isovistArea: 'good', openness: 'good', roundness: 'good', jaggedness: 'good', occlusions: 'good', isovistPct: 'good',
+  enclosureHW: 'fair (heights often estimated)', bcr: 'good', meanHeight: 'fair (heights often estimated)', edgeDist: 'good',
+  roadDist: 'good', skylineVar: 'fair (heights often estimated)', svf: 'fair (street trees rarely mapped)',
+  sunHours: 'fair (street trees rarely mapped)', shade: 'low (street trees rarely mapped)', utci: 'low (shade from trees missing; common design day)',
+  wind: 'fair (geometry only)', activeFrontage: 'fair (depends on shop/amenity mapping)', gvi: 'low (street trees rarely mapped)',
+  seating: 'none (benches not in extract)', waterView: 'fair',
+};
+for (const c of Object.values(check)) for (const t of c.terms) t.reliability = RELIABILITY[t.f] || 'unknown';
+
 // Compact bundle for the app (proof panel column + site list).
 const appBundle = {
+  reliability: RELIABILITY,
   note: 'Engine-measured physical condition at geolocated study sites of corpus papers (OSM, 200 m; sampled within 60 m). Same design day and air temperature everywhere, so values compare form, not local climate.',
   check,
   sites: metrics.filter((m) => !m.skipped).map((m) => ({

@@ -155,6 +155,16 @@ export function buildGrid(site, cell = 2) {
   for (const gr of site.green || []) forEachCellInPolygon(g, gr.polygon, (k) => { if (g.cls[k] === CLS.GROUND) g.cls[k] = CLS.GREEN; });
   site.buildings.forEach((b, i) => { if (!b.removed) stampBuilding(g, b, i); });
   for (const t of site.trees || []) stampTree(g, t);
+  // Mapped woodland (OSM natural=wood / landuse=forest) as continuous canopy.
+  for (const wd of site.woods || []) {
+    forEachCellInPolygon(g, wd.polygon, (k) => {
+      if (g.cls[k] === CLS.BUILDING) return;
+      g.cls[k] = CLS.TREE;
+      g.canopyTop[k] = Math.max(g.canopyTop[k], 12);
+      g.canopyBase[k] = g.canopyBase[k] > 0 ? Math.min(g.canopyBase[k], 3) : 3;
+      g.canopyTrans[k] = Math.min(g.canopyTrans[k], 0.25);
+    });
+  }
   for (const c of site.canopies || []) stampCanopy(g, c.polygon, c.height, c.trans);
   for (const f of site.furniture || []) {
     const k = cellOf(g, f.x, f.y);

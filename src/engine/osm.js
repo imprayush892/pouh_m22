@@ -46,7 +46,7 @@ export function siteFromOverpass(json, { lat, lon, radius = 200, name = 'OSM sit
   const activePts = [];
   for (const n of nodes.values()) if (n.tags && (n.tags.shop || ['restaurant', 'cafe', 'fast_food', 'bar', 'marketplace', 'bank', 'pharmacy'].includes(n.tags.amenity))) activePts.push(P(n.lat, n.lon));
 
-  const site = { name, origin: { lat, lon }, buildings: [], roads: [], trees: [], water: [], green: [], openSpaces: [], places: [] };
+  const site = { name, origin: { lat, lon }, buildings: [], roads: [], trees: [], water: [], green: [], woods: [], openSpaces: [], places: [] };
   let tagged = 0;
   const addPoly = (tags, pts, id) => {
     if (pts.length < 3) return;
@@ -55,10 +55,21 @@ export function siteFromOverpass(json, { lat, lon, radius = 200, name = 'OSM sit
       if (!estimated) tagged++;
       site.buildings.push({ id: `w${id}`, footprint: pts, height: h, heightEstimated: estimated, active: ACTIVE_BUILDING.has(tags.building) || !!tags.shop || !!tags.amenity });
     } else if (tags.natural === 'water' || tags.waterway === 'riverbank' || tags.water) site.water.push({ polygon: pts });
+    else if (tags.natural === 'wood' || tags.landuse === 'forest') site.woods.push({ polygon: pts });
     else if (Object.entries(GREEN).some(([k, vals]) => vals.includes(tags[k]))) site.green.push({ polygon: pts, kind: tags.leisure || tags.landuse || tags.natural });
   };
   for (const w of ways.values()) {
     const tags = w.tags || {};
+    if (tags.natural === 'tree_row') {
+      // Tree rows: one tree every 8 m along the line.
+      const line = (w.nodes || []).map((id) => nodes.get(id)).filter(Boolean).map((n) => P(n.lat, n.lon));
+      for (let i = 0; i < line.length - 1; i++) {
+        const [x1, y1] = line[i], [x2, y2] = line[i + 1];
+        const len = Math.hypot(x2 - x1, y2 - y1);
+        for (let t = 0; t < len; t += 8) site.trees.push({ x: x1 + ((x2 - x1) * t) / len, y: y1 + ((y2 - y1) * t) / len, r: 3, h: 8 });
+      }
+      continue;
+    }
     if (tags.highway) {
       const line = [];
       for (const id of w.nodes || []) { const n = nodes.get(id); if (n) line.push(P(n.lat, n.lon)); }
@@ -95,6 +106,7 @@ export function siteFromOverpass(json, { lat, lon, radius = 200, name = 'OSM sit
     heightTagged: site.buildings.length ? tagged / site.buildings.length : 0,
     trees: site.trees.length,
     greenPolygons: site.green.length,
+    woods: site.woods.length,
     roads: site.roads.length,
   };
   return site;
@@ -102,6 +114,6 @@ export function siteFromOverpass(json, { lat, lon, radius = 200, name = 'OSM sit
 
 export function overpassQuery(lat, lon, radius = 200) {
   const a = `(around:${radius},${lat},${lon})`;
-  return `[out:json][timeout:60];(way["building"]${a};relation["building"]${a};way["highway"]${a};node["natural"="tree"]${a};` +
+  return `[out:json][timeout:60];(way["natural"="tree_row"]${a};way["building"]${a};relation["building"]${a};way["highway"]${a};node["natural"="tree"]${a};` +
     `way["leisure"]${a};way["landuse"]${a};way["natural"]${a};relation["leisure"]${a};node["shop"]${a};node["amenity"]${a};);out body;>;out skel qt;`;
 }
