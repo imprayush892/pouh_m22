@@ -1,0 +1,2973 @@
+{
+ "svf": [
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "•SVF >0.5 and SVF <0.5 have different impacts during day and night.",
+   "nums": [
+    "0.5",
+    "0.5"
+   ]
+  },
+  {
+   "id": "W2060496785",
+   "y": 2011,
+   "s": "The main results obtained from different analyses are: (i) SVF for the southern half of the upper hemisphere (SVF90-270) is more suitable to characterise the sites with respect to the thermal perception of citizens than SVF for the whole upper hemisphere (SVF1-360), (ii) in contrast to wide E-W oriented street canyons, narrow E-W oriented street canyons have larger spatial differences in Ta, Tmrt ",
+   "nums": [
+    "10 %",
+    "0.2 °C",
+    "3.6 °C",
+    "1.4 °C"
+   ]
+  },
+  {
+   "id": "W1973785649",
+   "y": 2008,
+   "s": "For the specific conditions at the stationary site \"Rieselfeld\" (NW-SE oriented urban street canyon, H/W = 0.49, SVF = 0.51, SW oriented sidewalk), the contribution of the total long-wave radiation flux density absorbed by a standing person to Tmrt increased during the day from about 70% in the morning to about 90% in the evening before sunset.",
+   "nums": [
+    "0.49",
+    "0.51",
+    "70%",
+    "90%"
+   ]
+  },
+  {
+   "id": "W2610605913",
+   "y": 2017,
+   "s": "Comparisons were made with SVF estimates derived from two independent sources: a LiDAR-based Digital Surface Model (DSM) and an oblique airborne photogrammetry-based 3D city model (OAP3D), resulting in a correlation coefficient of 0.863 and 0.987, respectively.",
+   "nums": [
+    "0.863",
+    "0.987"
+   ]
+  },
+  {
+   "id": "W3216793944",
+   "y": 2021,
+   "s": "Varying levels of SVF and tree cover in the sites allowed the construction of multivariate models, which revealed that, during common summer afternoon conditions, decreases of SVF by 12.5% or increases of tree cover by 25% can reduce the UTCI by 1°.",
+   "nums": [
+    "12.5%",
+    "25%"
+   ]
+  },
+  {
+   "id": "W4405464961",
+   "y": 2024,
+   "s": "Envi-met 5.5.0 software was used to analyse and evaluate thermal comfort factors (PET, SVF) and simulated using ENVI-MET software on a summer day in July 2023.",
+   "nums": [
+    "5.5"
+   ]
+  },
+  {
+   "id": "W1942098530",
+   "y": 2015,
+   "s": "Several spatial characteristics, including sky view factor (SVF) as well as the cover and volume of buildings and trees, were calculated within circular areas of radii ranging from 10 to 150 m.",
+   "nums": [
+    "10 to 150 m"
+   ]
+  },
+  {
+   "id": "W4368405155",
+   "y": 2023,
+   "s": "The results of the study found that the best case among the first group of configurations with unified heights was U3, which had unified mass heights reaching 20 m height, the highest H/W ratio, and the lowest sky view factor;",
+   "nums": [
+    "20 m"
+   ]
+  },
+  {
+   "id": "W1986011006",
+   "y": 2012,
+   "s": "Sky-view factors are estimated from a 0.5 m × 0.5 m surface elevation database, and land use is obtained from a 25 m × 25 m land-use database.",
+   "nums": [
+    "0.5 m",
+    "0.5 m",
+    "25 m",
+    "25 m"
+   ]
+  },
+  {
+   "id": "W2179877245",
+   "y": 2004,
+   "s": "(The maximum increase of 0.39°C occurs at 0600 LST.) The smaller sky-view factor increases the temperature though the day, particularly during the first several hours after sunset.",
+   "nums": [
+    "0.39°C"
+   ]
+  },
+  {
+   "id": "W2965247913",
+   "y": 2019,
+   "s": "The sky view factor (SVF) is essential to describe the urban climatology at scales below 100m.",
+   "nums": [
+    "100m"
+   ]
+  },
+  {
+   "id": "W2965247913",
+   "y": 2019,
+   "s": "Results show that the fourth largest city within the Netherlands, Utrecht, has a mean diurnal maximum UHI of 3.1 °C using a 1m SVF resolution.",
+   "nums": [
+    "3.1 °C",
+    "1m"
+   ]
+  },
+  {
+   "id": "W2965247913",
+   "y": 2019,
+   "s": "But, with a 3m SVF resolution the UHI is on average 0.6 °C lower.",
+   "nums": [
+    "3m",
+    "0.6 °C"
+   ]
+  },
+  {
+   "id": "W3046305014",
+   "y": 2020,
+   "s": "Observations across diverse urban forms, sky view factors, and seasons covered a wide range of solar radiation regimes from a minimum TMRT of 8.7 °C to a maximum of 84.9 °C.",
+   "nums": [
+    "8.7 °C",
+    "84.9 °C"
+   ]
+  }
+ ],
+ "gvi": [
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "Based on projective geometry principles, a quantitative “shadow−facade−GVI” mapping model was developed: First, DJI Mavic 2 drones captured high-resolution orthophotos (100 m altitude, 10 mm focal length, 24 mm ground sample distance) during summer daylight hours, while 308 on-site GVI images were synchronously taken at 1.5 m eye height using standardized protocols (24 mm focal length, 16∶9 aspect",
+   "nums": [
+    "100 m",
+    "1.5 m"
+   ]
+  },
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "The theoretically derived formula IGV=(m1×tanθ S/M) (f1×p×H/f2×c×L)2×100% quantified relationships between GVI and orthophoto-measured parameters.",
+   "nums": [
+    "100%"
+   ]
+  },
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "Statistical analysis of 275 validation datasets revealed a highly significant linear relationship between simulated and field-measured GVI: IGV, simulated = 0.82 × IGV, field + 0.13 (R 2=0.593, p < 0.001).",
+   "nums": [
+    "0.82",
+    "0.13",
+    "0.593",
+    "0.001"
+   ]
+  },
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "Site-level GVI errors remained low (YS: 44.60% simulated vs.",
+   "nums": [
+    "44.60%"
+   ]
+  },
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "Scenario-based analysis further revealed: strongest correlation in open recreational areas (r=0.841), tightly clustered errors at road nodes, systematic overestimation in low-GVI scenarios (<40%) likely due to minor shadow detection artifacts, and higher variability in open-space viewpoints (IQR span: 0.1676) attributable to broader sightlines.",
+   "nums": [
+    "0.841",
+    "40%",
+    "0.1676"
+   ]
+  },
+  {
+   "id": "W4412631107",
+   "y": 2025,
+   "s": "Applying these indices to a case study in Nanjing, China, this study shows that (1) FFGVI exhibited a strong correlation with GVI (R = 0.88), whereas the association between SCGVI and GVI was marginally weaker (R = 0.78).",
+   "nums": [
+    "0.88",
+    "0.78"
+   ]
+  },
+  {
+   "id": "W4414261488",
+   "y": 2025,
+   "s": "(2) The distribution of the GVI in Kaifeng City exhibits a significant spatial polarization phenomenon, with the proportion of low-value area (35.40%) being significantly higher than that of high-value area (25.10%) and the spatial clustering being evident (Moran’s Index 0.3824).",
+   "nums": [
+    "35.40%",
+    "25.10%",
+    "0.3824"
+   ]
+  },
+  {
+   "id": "W4414261488",
+   "y": 2025,
+   "s": "(3) POI density and GVI had a substantial negative correlation (r = −0.085), suggesting a complicated process of interaction between green space and urban functions.",
+   "nums": [
+    "0.085"
+   ]
+  }
+ ],
+ "utci": [
+  {
+   "id": "W7212631283",
+   "y": 2026,
+   "s": "The integrated scenario produced the greatest impact, reducing average UTCI by 5.1°C and increasing comfortable hours by 3.3 hours per day across all sites.",
+   "nums": [
+    "5.1°C",
+    "3.3"
+   ]
+  },
+  {
+   "id": "W3133184904",
+   "y": 2021,
+   "s": "An increase in tree and ground vegetation fractions provides a higher average UTCI reduction compared to a change in vegetation traits (0.9 – 2.9 °C vs.",
+   "nums": [
+    "0.9 – 2.9 °C"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "The findings indicated that the neutral PET during spring and summer was 22.30 °C and 24.55 °C, respectively, whilst the neutral UTCI was 18.75 °C and 26 °C, respectively, with the neutral temperature in summer being significantly higher than that in spring.",
+   "nums": [
+    "22.30 °C",
+    "24.55 °C",
+    "18.75 °C",
+    "26 °C"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "Finally, regression analysis demonstrated that the acceptable PET range for 90% of cases during both seasons in Shanghai is between 25.0 °C and 32.1 °C, and the UTCI range is between 24.2 °C and 27.7 °C.",
+   "nums": [
+    "90%",
+    "25.0 °C",
+    "32.1 °C",
+    "24.2 °C",
+    "27.7 °C"
+   ]
+  },
+  {
+   "id": "W2954916971",
+   "y": 2019,
+   "s": "Results showed that in summer, the proposed method can reduce the averaged UTCI from 31.17 to 27.43 °C, a decrease of about 3.74 °C, and reduce mean radiation temperature (MRT) from 43.94 to 41.29 °C, a decrease of about 2.65 °C.",
+   "nums": [
+    "31.17 to 27.43 °C",
+    "3.74 °C",
+    "43.94 to 41.29 °C",
+    "2.65 °C"
+   ]
+  },
+  {
+   "id": "W3216793944",
+   "y": 2021,
+   "s": "Varying levels of SVF and tree cover in the sites allowed the construction of multivariate models, which revealed that, during common summer afternoon conditions, decreases of SVF by 12.5% or increases of tree cover by 25% can reduce the UTCI by 1°.",
+   "nums": [
+    "12.5%",
+    "25%"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(3) Compared with direct sunlight, the average UTCI decreased by 6.6 and 3.5 °C for building shade and tree shade environments, and the neutral UTCI in Dalian was found to be 18.8 °C.",
+   "nums": [
+    "6.6",
+    "3.5 °C",
+    "18.8 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(4) When UTCI ≥ 21.9 °C, the thermal acceptability rate in building shade remained the highest;",
+   "nums": [
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "when 10.2 °C ≤ UTCI < 21.9 °C, it was highest in tree shade;",
+   "nums": [
+    "10.2 °C",
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "and when the UTCI < 10.2 °C, it was highest in sunlight.",
+   "nums": [
+    "10.2 °C"
+   ]
+  },
+  {
+   "id": "W3128936126",
+   "y": 2021,
+   "s": "The cooling effect of trees may range from 4 °C to 9 °C in UTCI, and the cooling effect of grass in comparison with artificial paved surfaces in open public places may be from 2 °C to 5 °C UTCI.",
+   "nums": [
+    "4 °C",
+    "9 °C",
+    "2 °C",
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W2979768438",
+   "y": 2020,
+   "s": "Results show deviations below the relevant precision of 0.1 K for PET and UTCI and some deviations of up to 2.683 K for PT caused by repeated unfavorable rounding in very rare cases (0.027 %).",
+   "nums": [
+    "0.1 K",
+    "2.683 K",
+    "0.027 %"
+   ]
+  }
+ ],
+ "pet": [
+  {
+   "id": "W4321764521",
+   "y": 2023,
+   "s": "PET and TCV showed noticeable spatiotemporal variations in both sites, and their correlation was stronger in the morning (r = 0.87–0.89) than late afternoon (r = 0.60–0.70).",
+   "nums": [
+    "0.87–0.89",
+    "0.60–0.70"
+   ]
+  },
+  {
+   "id": "W4321764521",
+   "y": 2023,
+   "s": "Built environment variables explained a higher percentage of the variance in PET (Yongqingfang R2: 0.59–0.82, Knowledge City R2: 0.32–0.81) than TCV (Yongqingfang R2: 0.45–0.57, Knowledge City R2: 0.48–0.69).",
+   "nums": [
+    "0.59–0.82",
+    "0.32–0.81",
+    "0.45–0.57",
+    "0.48–0.69"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "• Inside green spaces, mean PET can vary up to 4 ℃ among different design scenarios.",
+   "nums": [
+    "4 ℃"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "The study shows that inside the small green spaces, the mean Physiological Equivalent Temperature (PET) of different cases can vary up to 4 ℃.",
+   "nums": [
+    "4 ℃"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "For a good cooling outside the green spaces, a configuration of grouped small green areas can reduce the PET by 1.3 ℃, with distribution of the green spaces being the most influential factor.",
+   "nums": [
+    "1.3 ℃"
+   ]
+  },
+  {
+   "id": "W3085110501",
+   "y": 2020,
+   "s": "After examining the effect of the park in terms of physiological equivalent temperature (PET), it was found that the PET at the 130 m and 280 m distance of the park was 9.3% and 5.4% less than the PET in the heat island domain.",
+   "nums": [
+    "130 m",
+    "280 m",
+    "9.3%",
+    "5.4%"
+   ]
+  },
+  {
+   "id": "W2274099244",
+   "y": 2016,
+   "s": "This reflected radiation intensified the mean radiant temperature and consequently increased physiological equivalent temperature (PET) by 2.2 °C during the day, reducing the thermal comfort of pedestrians.",
+   "nums": [
+    "2.2 °C"
+   ]
+  },
+  {
+   "id": "W2274099244",
+   "y": 2016,
+   "s": "At another set of receptor locations that were on average 5 m from roadways and underneath preexisting tree cover, cool pavements caused significant reductions in surface air temperatures and small changes in mean radiant temperature during the day, leading to decreases in PET of 1.1 °C, and consequent improvements in thermal comfort.",
+   "nums": [
+    "5 m",
+    "1.1 °C"
+   ]
+  },
+  {
+   "id": "W4387782539",
+   "y": 2023,
+   "s": "In studied elements, the contribution ratio of TCC to PET is consistently higher than 50% during the morning, midday, and evening periods, reaching a peak of 67% in the evening.",
+   "nums": [
+    "50%",
+    "67%"
+   ]
+  },
+  {
+   "id": "W2065623771",
+   "y": 2013,
+   "s": "PET values, high as 34°C, are observed to prevail during the afternoons especially in the east-west oriented streets, and buildings’ height of 5 m has less effect on the thermal comfort.",
+   "nums": [
+    "34°C",
+    "5 m"
+   ]
+  },
+  {
+   "id": "W2065623771",
+   "y": 2013,
+   "s": "The optimal reduction of Tmrt and PET values for pedestrians was observed on the nearly north-south reoriented streets and with increased buildings’ height especially close to 100 m.",
+   "nums": [
+    "100 m"
+   ]
+  },
+  {
+   "id": "W4391538823",
+   "y": 2024,
+   "s": "ENVI-met software version 5.1.1 and the RayMan model were used to estimate the local climate conditions and outdoor thermal comfort levels based on the physiological equivalent temperature (PET).",
+   "nums": [
+    "5.1"
+   ]
+  },
+  {
+   "id": "W4391538823",
+   "y": 2024,
+   "s": "All scenarios reduced PET values across the street, with optimal reductions of −2.0 °C, −3.1 °C, −1.3 °C, −1.7 °C, and −1.2 °C in Sc1, Sc2, Sc3, Sc4, and Sc5, respectively.",
+   "nums": [
+    "2.0 °C",
+    "3.1 °C",
+    "1.3 °C",
+    "1.7 °C",
+    "1.2 °C"
+   ]
+  },
+  {
+   "id": "W2918274846",
+   "y": 2019,
+   "s": "(b) The thermal stress for pedestrians increased dramatically when the CHW was lower than 1.5 in alleys and 0.78 in boulevards (in TCA = 89%), while the CHW higher than 1 indicated a remarkable reduction on the PET for pedestrians in arcades.",
+   "nums": [
+    "1.5",
+    "0.78",
+    "89%"
+   ]
+  },
+  {
+   "id": "W3167078479",
+   "y": 2021,
+   "s": "The frequency of strong heat stress (PET > 35 °C) was 64%, 11%, and 0%, respectively, for streets with low, medium, and high tree cover.",
+   "nums": [
+    "35 °C",
+    "64%",
+    "11%",
+    "0%"
+   ]
+  },
+  {
+   "id": "W7132839862",
+   "y": 2026,
+   "s": "• Presents an original multi-scalar ENVI-met assessment integrating building- and neighborhood-scale passive cooling • Evaluates six retrofit scenarios (S0–S5) for a residential neighborhood in Al Ain, UAE, under extreme hot-arid conditions • Integrates cool pavements, green walls, native Prosopis cineraria (Al Ghaf) trees, and super cool reflective roofs • Achieves surface temperature reductions ",
+   "nums": [
+    "10–12°C",
+    "3.5°C",
+    "1.2 m",
+    "5–8°C",
+    "23–34.6°C"
+   ]
+  },
+  {
+   "id": "W2055973239",
+   "y": 2005,
+   "s": "The present study addresses the issue of outdoor thermal comfort in a hot and dry climate in relation to urban geometry.This experimental work, conducted in an old desert city, aims to provide some quantitative knowledge on the effectiveness of traditional design forms in ensuring a comfortable thermal environment outdoors under extreme summer conditions.The study focused on the role of the geomet",
+   "nums": [
+    "32.40"
+   ]
+  },
+  {
+   "id": "W2060496785",
+   "y": 2011,
+   "s": "The main results obtained from different analyses are: (i) SVF for the southern half of the upper hemisphere (SVF90-270) is more suitable to characterise the sites with respect to the thermal perception of citizens than SVF for the whole upper hemisphere (SVF1-360), (ii) in contrast to wide E-W oriented street canyons, narrow E-W oriented street canyons have larger spatial differences in Ta, Tmrt ",
+   "nums": [
+    "10 %",
+    "0.2 °C",
+    "3.6 °C",
+    "1.4 °C"
+   ]
+  },
+  {
+   "id": "W4319316700",
+   "y": 2023,
+   "s": "The perceived air temperature (Physiological Equivalent Temperature—PET index) can decrease by up to 15 °C in well-shaded locations and near building corners, while nitrogen oxides can be reduced by up to 87% when considering a more radical pedestrianization scenario.",
+   "nums": [
+    "15 °C",
+    "87%"
+   ]
+  },
+  {
+   "id": "W4403461081",
+   "y": 2024,
+   "s": "Conversely, in Alexandria, the street canyon orientation proved more advantageous, where a northwest-southeast orientation produced a significant decrease (10 K) in PET compared to the least favorable orientation.",
+   "nums": [
+    "10 K"
+   ]
+  },
+  {
+   "id": "W2972867788",
+   "y": 2019,
+   "s": "Moreover, the degree of the physiological equivalent temperature (PET) index at a distance of 150 meters from the park is on average 2 °C PET and 2.3 °C PET less compared to distances of 380 m and 665 m, respectively.",
+   "nums": [
+    "2 °C",
+    "2.3 °C",
+    "380 m",
+    "665 m"
+   ]
+  },
+  {
+   "id": "W1978443730",
+   "y": 2012,
+   "s": "Through visualization and analysis using the ArcGIS software, it was shown that both the tree scenario and the grass scenario can reduce the average PET of the domain by 0.4K, suggesting that strategic design of urban greenery can effectively improve the downtown urban environment and outdoor thermal comfort.",
+   "nums": [
+    "0.4K"
+   ]
+  },
+  {
+   "id": "W4214825048",
+   "y": 2022,
+   "s": "Except for the limited air velocity correlation, the results presented very good agreement, particularly with respect to the final results of the PET visually curved and numerical values, with an index of agreement value ranging from 0.81 to 0.95.",
+   "nums": [
+    "0.81 to 0.95"
+   ]
+  },
+  {
+   "id": "W4384296771",
+   "y": 2023,
+   "s": "This research conducts numerical simulations using ENVI-met software employing physiological equivalent temperature (PET) to understand how planting patterns affect microclimate and OTC at pedestrian level (1.5m) under clustered, scattered, and equally distributed planting arrangements.",
+   "nums": [
+    "1.5m"
+   ]
+  },
+  {
+   "id": "W4384296771",
+   "y": 2023,
+   "s": "Equally distributed planting arrangement has a significant impact providing the highest comfort improvement (9.8 ℃ PET reduction) at the pedestrian level.",
+   "nums": [
+    "9.8 ℃"
+   ]
+  },
+  {
+   "id": "W1996187877",
+   "y": 2007,
+   "s": "the increase of H/W ratio from about 1 to 3 leads to a decrease in PET by about 10 °C.",
+   "nums": [
+    "10 °C"
+   ]
+  },
+  {
+   "id": "W2027811510",
+   "y": 2014,
+   "s": "In summer, urban areas show a larger number of discomfort hours (PET > 23 °C) compared to the reference rural area.",
+   "nums": [
+    "23 °C"
+   ]
+  },
+  {
+   "id": "W2889262240",
+   "y": 2018,
+   "s": "It is found that the maximum improvement of PET reduction with suggested landscape designs is about 12°C, and high-albedo pavement materials and water bodies are not effective in reducing heat stress in hot and humid climate conditions.",
+   "nums": [
+    "12°C"
+   ]
+  },
+  {
+   "id": "W2066358726",
+   "y": 2011,
+   "s": "The result shows that an increase of 0.4 in the ground surface albedo overall reduces the thermal comfort, as indicated by an increase of 5–7°C in PET during the day with a marginal decrease of less than 1°C at night.",
+   "nums": [
+    "0.4",
+    "5–7°C",
+    "1°C"
+   ]
+  },
+  {
+   "id": "W2066358726",
+   "y": 2011,
+   "s": "A reduction of up to 15°C in daytime PET is achieved by adding a dense tree cover (LAI = 6.4) over a grass lawn and up to 20°C by adding the tree cover over the hard pavement with an albedo of 0.2.",
+   "nums": [
+    "15°C",
+    "6.4",
+    "20°C",
+    "0.2"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "The findings indicated that the neutral PET during spring and summer was 22.30 °C and 24.55 °C, respectively, whilst the neutral UTCI was 18.75 °C and 26 °C, respectively, with the neutral temperature in summer being significantly higher than that in spring.",
+   "nums": [
+    "22.30 °C",
+    "24.55 °C",
+    "18.75 °C",
+    "26 °C"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "Finally, regression analysis demonstrated that the acceptable PET range for 90% of cases during both seasons in Shanghai is between 25.0 °C and 32.1 °C, and the UTCI range is between 24.2 °C and 27.7 °C.",
+   "nums": [
+    "90%",
+    "25.0 °C",
+    "32.1 °C",
+    "24.2 °C",
+    "27.7 °C"
+   ]
+  },
+  {
+   "id": "W1839452767",
+   "y": 2019,
+   "s": "Although the trees lowered the wind speed up to 45% of the maximum values, the thermal comfort was improved considerably as the physiologically equivalent temperature (PET) was reduced by up to 12°C.",
+   "nums": [
+    "45%",
+    "12°C"
+   ]
+  },
+  {
+   "id": "W4225486196",
+   "y": 2022,
+   "s": "Results revealed significant differences in physiologically equivalent temperature (PET) and modified physiologically equivalent temperature (mPET) and between street segments with more than 18 °C (25 °C mPET) between the maximum and minimum values.",
+   "nums": [
+    "18 °C",
+    "25 °C"
+   ]
+  },
+  {
+   "id": "W4225486196",
+   "y": 2022,
+   "s": "Participants' sense of pleasure was related to the mean PET of the segment they just walked, with linear regression explaining over 60% of the variability.",
+   "nums": [
+    "60%"
+   ]
+  },
+  {
+   "id": "W2905900865",
+   "y": 2018,
+   "s": "The resulted value of Physiological Equivalent Temperature, PET at peak time was reduced from the initial result of ENVI-met (42.3 °C) in both sites to reach (38.7 °C) then (36.8 °C) after refinement with extra foliage.",
+   "nums": [
+    "42.3 °C",
+    "38.7 °C",
+    "36.8 °C"
+   ]
+  },
+  {
+   "id": "W2999700177",
+   "y": 2020,
+   "s": "Despite the physiological equivalent temperature (PET) level declination reaching 32.2 °C at 3:00 pm, thermal stress levels in compact areas had halved, providing ideal comfort levels that remained constant most of the day.",
+   "nums": [
+    "32.2 °C"
+   ]
+  },
+  {
+   "id": "W4327951445",
+   "y": 2023,
+   "s": "The influence of its geometry considering AR is decisive since the impact of outdoor climate on the microclimate of the courtyard depends on it, exceeding values of 60% comfort hours (PET and EN16798) in all case studies during the warm season.",
+   "nums": [
+    "60%"
+   ]
+  },
+  {
+   "id": "W4404373409",
+   "y": 2024,
+   "s": "This study examined the microclimatic characteristics of the Burç neighborhood in the historical core of Burdur city, using ENVI-Met models with temperature, relative humidity, wind and PET data collected over a 33,665 m2 area at 06:00, 09:00, 12:00, 15:00, 18:00 and 21:00 on 15 August 2023.",
+   "nums": [
+    "665 m2"
+   ]
+  },
+  {
+   "id": "W4313244934",
+   "y": 2022,
+   "s": "At 15:00, the hottest time during the summer, the highest PET at pedestrian height was lowest in the scenario without trees, reaching 28.3 °C, and the highest was with full ash, reaching 34.3 °C.",
+   "nums": [
+    "28.3 °C",
+    "34.3 °C"
+   ]
+  },
+  {
+   "id": "W4313244934",
+   "y": 2022,
+   "s": "At the same time, the average difference in PET between the two scenarios was 1.4 °C.",
+   "nums": [
+    "1.4 °C"
+   ]
+  },
+  {
+   "id": "W4405464961",
+   "y": 2024,
+   "s": "Envi-met 5.5.0 software was used to analyse and evaluate thermal comfort factors (PET, SVF) and simulated using ENVI-MET software on a summer day in July 2023.",
+   "nums": [
+    "5.5"
+   ]
+  },
+  {
+   "id": "W4405464961",
+   "y": 2024,
+   "s": "The results revealed a decrease in (PET) by (8.32) degrees Celsius, which achieved international standards for outdoor pedestrian comfort.",
+   "nums": [
+    "8.32"
+   ]
+  },
+  {
+   "id": "W2402931547",
+   "y": 2016,
+   "s": "A regression of subjective thermal sensation on physiological equivalent temperature yielded a neutral temperature of 28.6 °C.",
+   "nums": [
+    "28.6 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "The calibration of the PET index, resulted in the definition of the thermal acceptability range of: “Cold” for PET values bellow 19 °C;",
+   "nums": [
+    "19 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "“Neutral” for PET values between 19 °C and 27 °C;",
+   "nums": [
+    "19 °C",
+    "27 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "“Hot” for PET values greater than 27 °C.",
+   "nums": [
+    "27 °C"
+   ]
+  },
+  {
+   "id": "W4223940093",
+   "y": 2022,
+   "s": "The calculated physiological equivalent temperatures (PET) and thermal comfortable hours beneath different shade structures were assessed using RayMan 1.2 software.",
+   "nums": [
+    "1.2"
+   ]
+  },
+  {
+   "id": "W2901006190",
+   "y": 2018,
+   "s": "The comparison of four meteorological parameters have shown minor error percentages with nearly 90% precise PET results.",
+   "nums": [
+    "90%"
+   ]
+  },
+  {
+   "id": "W1993031224",
+   "y": 2013,
+   "s": "The results show that the most effective adaptation measure was increased wind speed (maximal 15 K PET reduction).",
+   "nums": [
+    "15 K"
+   ]
+  },
+  {
+   "id": "W2039196723",
+   "y": 2013,
+   "s": "With respect to both shading devices, the Ta reduction did not exceed 2°C, while PET as a measure for human heat stress was lowered by two thermal sensation steps according to the ASHRAE scale.",
+   "nums": [
+    "2°C"
+   ]
+  },
+  {
+   "id": "W3145090086",
+   "y": 2016,
+   "s": "The location associated with the most discomfort had a PET of $47.8^{\\circ}C$ .",
+   "nums": [
+    "47.8"
+   ]
+  },
+  {
+   "id": "W3145090086",
+   "y": 2016,
+   "s": "The most comfortable location had shade, and the PET was $24.6^{\\circ}C$ .",
+   "nums": [
+    "24.6"
+   ]
+  },
+  {
+   "id": "W2979768438",
+   "y": 2020,
+   "s": "Results show deviations below the relevant precision of 0.1 K for PET and UTCI and some deviations of up to 2.683 K for PT caused by repeated unfavorable rounding in very rare cases (0.027 %).",
+   "nums": [
+    "0.1 K",
+    "2.683 K",
+    "0.027 %"
+   ]
+  },
+  {
+   "id": "W3009412602",
+   "y": 2020,
+   "s": "Typical PET reduction was 0.6 °C, with a maximum of 1.9 °C.",
+   "nums": [
+    "0.6 °C",
+    "1.9 °C"
+   ]
+  }
+ ],
+ "hw": [
+  {
+   "id": "W3023604562",
+   "y": 2020,
+   "s": "Streets shaded by trees with a canyon aspect ratio of between 1.18 and 1.70 reduce heat stress in outdoor spaces.",
+   "nums": [
+    "1.18",
+    "1.70"
+   ]
+  },
+  {
+   "id": "W3112356819",
+   "y": 2020,
+   "s": "Our findings reveal that street canyon orientation is the most influential factor (46.42%), followed by aspect ratio (30.59%).",
+   "nums": [
+    "46.42%",
+    "30.59%"
+   ]
+  },
+  {
+   "id": "W4212776066",
+   "y": 2022,
+   "s": "Changes in the street width, street orientation, and street canyon aspect ratio had a significantly higher impact on the microclimate and thermal comfort index (p < 0.01).",
+   "nums": [
+    "0.01"
+   ]
+  },
+  {
+   "id": "W7128389059",
+   "y": 2026,
+   "s": "Based on projective geometry principles, a quantitative “shadow−facade−GVI” mapping model was developed: First, DJI Mavic 2 drones captured high-resolution orthophotos (100 m altitude, 10 mm focal length, 24 mm ground sample distance) during summer daylight hours, while 308 on-site GVI images were synchronously taken at 1.5 m eye height using standardized protocols (24 mm focal length, 16∶9 aspect",
+   "nums": [
+    "100 m",
+    "1.5 m"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "•Areas with an aspect ratio between 0.5 and 2.0 showed better thermal performance.",
+   "nums": [
+    "0.5",
+    "2.0"
+   ]
+  },
+  {
+   "id": "W2279036626",
+   "y": 2016,
+   "s": "Moreover, it depends linearly on H/W for H/W < 1.25, with a slope that depends on maximum off-nadir sensor angle.",
+   "nums": [
+    "1.25"
+   ]
+  },
+  {
+   "id": "W4403461081",
+   "y": 2024,
+   "s": "In Aswan, the aspect ratio had a greater influence on comfort, with aspect ratio of 2.5 providing the most favorable conditions and a ratio of 1 resulting in the least comfortable conditions.",
+   "nums": [
+    "2.5"
+   ]
+  },
+  {
+   "id": "W1973785649",
+   "y": 2008,
+   "s": "For the specific conditions at the stationary site \"Rieselfeld\" (NW-SE oriented urban street canyon, H/W = 0.49, SVF = 0.51, SW oriented sidewalk), the contribution of the total long-wave radiation flux density absorbed by a standing person to Tmrt increased during the day from about 70% in the morning to about 90% in the evening before sunset.",
+   "nums": [
+    "0.49",
+    "0.51",
+    "70%",
+    "90%"
+   ]
+  },
+  {
+   "id": "W1996187877",
+   "y": 2007,
+   "s": "the increase of H/W ratio from about 1 to 3 leads to a decrease in PET by about 10 °C.",
+   "nums": [
+    "10 °C"
+   ]
+  },
+  {
+   "id": "W4308128754",
+   "y": 2022,
+   "s": "(2) After field measurements, it was found that H/W at the measurement sites was 0.60 to 6.02, with an average of 2.13.",
+   "nums": [
+    "0.60 to 6.02",
+    "2.13"
+   ]
+  },
+  {
+   "id": "W4308128754",
+   "y": 2022,
+   "s": "(3) In the study area, H/W of 2.31–2.48 and 3.35–3.60 had a positive correlation with air temperature, and H/W had a dominant influence on outdoor air temperature, and H/W of 2.09–2.31 and H/W > 3.60 was inversely related to air temperature.",
+   "nums": [
+    "2.31–2.48",
+    "3.35–3.60",
+    "2.09–2.31",
+    "3.60"
+   ]
+  },
+  {
+   "id": "W1645040285",
+   "y": 2015,
+   "s": "Thus, the goal of this study is to investigate the thermal performance of two urban canyons, deep traditional (H/W=2.2) and shallow modern canyons (H/W=0.42) in a hot and arid city of Riyadh, Saudi Arabia.",
+   "nums": [
+    "2.2",
+    "0.42"
+   ]
+  },
+  {
+   "id": "W2162495382",
+   "y": 2004,
+   "s": "When the approaching wind is perpendicular to the street axis, a single primary recirculation is calculated for the street canyons of aspect ratios 0.5 and 1.0, and two vertically aligned, counterrotating primary recirculations are found for the street canyon of aspect ratio 2.0.",
+   "nums": [
+    "0.5",
+    "1.0",
+    "2.0"
+   ]
+  },
+  {
+   "id": "W2162495382",
+   "y": 2004,
+   "s": "Whereas the ground-level pollutant concentration is greatest at the leeward corner of the street canyons of aspect ratios 0.5 and 1.0, the ground-level pollutant concentration in a street canyon of aspect ratio 2.0 occurs at the windward corner and is greater than the peak concentrations of the other two cases.",
+   "nums": [
+    "0.5",
+    "1.0",
+    "2.0"
+   ]
+  },
+  {
+   "id": "W2162495382",
+   "y": 2004,
+   "s": "The retention of pollutant in the street canyons is calculated to be 95%, 97%, and 99% for aspect ratios of 0.5, 1.0, and 2.0, respectively.",
+   "nums": [
+    "95%",
+    "97%",
+    "99%",
+    "0.5",
+    "1.0",
+    "2.0"
+   ]
+  },
+  {
+   "id": "W1993212375",
+   "y": 2014,
+   "s": "Among different options, canopy shading has been proposed in several urban contexts, and to assess the impact of this mitigation technique on air temperature and outdoor thermal comfort conditions we performed numerical simulations for a north-south oriented urban canyon with high solar access (height to width ratio equal to 0.18) in the climate context of Milano (Italy).",
+   "nums": [
+    "0.18"
+   ]
+  },
+  {
+   "id": "W2174109949",
+   "y": 1999,
+   "s": "For each of seven cases with different aspect ratios (building height/width between buildings = 0.5, 1, 1.5, 2, 2.5, 3, and 3.5), four thermal situations (no heating, upwind building-wall heating, street-canyon bottom heating, and downwind building-wall heating) are considered.",
+   "nums": [
+    "0.5",
+    "1.5",
+    "2.5",
+    "3.5"
+   ]
+  },
+  {
+   "id": "W2174109949",
+   "y": 1999,
+   "s": "When the aspect ratio is greater than or equal to 1.5, the upward motion forced by upwind building-wall heating overcomes the downward motion that appears in the cases of no heating.",
+   "nums": [
+    "1.5"
+   ]
+  },
+  {
+   "id": "W2174109949",
+   "y": 1999,
+   "s": "However, when the aspect ratio is 3 or 3.5, the horizontal velocity is not strong enough to shift the maximum temperature axis toward the upwind side.",
+   "nums": [
+    "3.5"
+   ]
+  },
+  {
+   "id": "W2174109949",
+   "y": 1999,
+   "s": "With downwind building-wall heating, two counterrotating vortices appear except in the 0.5 aspect ratio case.",
+   "nums": [
+    "0.5"
+   ]
+  },
+  {
+   "id": "W4316037750",
+   "y": 2023,
+   "s": "The H/W was varied from 0.5 to 6 in seven steps by changing the heights of the buildings on both sides of the street.",
+   "nums": [
+    "0.5 to 6"
+   ]
+  },
+  {
+   "id": "W4392245270",
+   "y": 2024,
+   "s": "A scaled outdoor experiment was conducted to examine the thermal effects of west-facing green walls (GWs) in street canyons with different street aspect ratios (building height/street width, H/W = AR = 1, 1.5, and 2, H = 1.2 m) under different weather conditions in humid-subtropical Guangzhou, China.",
+   "nums": [
+    "1.5",
+    "1.2 m"
+   ]
+  },
+  {
+   "id": "W2016618945",
+   "y": 2005,
+   "s": "Effects of excess ground and building temperatures on airflow and dispersion of pollutants in an urban street canyon with an aspect ratio of 0.8 and a length-to-width ratio of 3 were investigated numerically.",
+   "nums": [
+    "0.8"
+   ]
+  },
+  {
+   "id": "W2116976326",
+   "y": 2010,
+   "s": "The temperature and velocity patterns were discussed in idealized street canyons of different aspect ratios (0.5–2.0) with varying ambient wind speeds (0.5–1.5 m/s) and Δθs−a (2–8 K).",
+   "nums": [
+    "0.5–2.0",
+    "0.5–1.5 m/s",
+    "2–8 K"
+   ]
+  },
+  {
+   "id": "W2605578280",
+   "y": 2017,
+   "s": "Seventeen canyons characterized by diverse geometries including four different canyon axis orientations and a range of aspect ratios from 0.6 to 3.3 as well as variations of vegetation and pavement material, were monitored during summer and winter.",
+   "nums": [
+    "0.6 to 3.3"
+   ]
+  },
+  {
+   "id": "W3089269923",
+   "y": 2020,
+   "s": "It was demonstrated that RR and AS-RR materials applied to the street performed better in low-density urban environment (H/W ≤ 0.5) with a consequent increase of the solar energy gains on the north façade by up to 15%.",
+   "nums": [
+    "0.5",
+    "15%"
+   ]
+  },
+  {
+   "id": "W3089269923",
+   "y": 2020,
+   "s": "Employing RR and AS-RR materials on the south-exposed façade showed greater effectiveness on high-density urban canyon (H/W ≥ 2.0) and reduced by up to −8% the solar irradiation absorbed by the façade.",
+   "nums": [
+    "2.0",
+    "8%"
+   ]
+  },
+  {
+   "id": "W4368405155",
+   "y": 2023,
+   "s": "The results of the study found that the best case among the first group of configurations with unified heights was U3, which had unified mass heights reaching 20 m height, the highest H/W ratio, and the lowest sky view factor;",
+   "nums": [
+    "20 m"
+   ]
+  },
+  {
+   "id": "W3047751981",
+   "y": 2020,
+   "s": "The focus is an urban street canyon with a mean aspect ratio H/W of 1.65 in the business centre of a mid-size Italian city (H is the mean building height and W is the mean canyon width).",
+   "nums": [
+    "1.65"
+   ]
+  },
+  {
+   "id": "W2152237690",
+   "y": 2015,
+   "s": "High-rise buildings and narrow road width (height to width, H/W, ratios up to 15) reduced the modelled total UV (UVA+UVB) radiation and leave 10% of the un-obstructed exposure rate at ground-level at noon.",
+   "nums": [
+    "10%"
+   ]
+  },
+  {
+   "id": "W2152237690",
+   "y": 2015,
+   "s": "However, our results in more extreme environments (higher H/W ratios) were for the first time reported, with 18% of the un-obstructed exposure rate remained at the ground-level center of the street canyon.",
+   "nums": [
+    "18%"
+   ]
+  }
+ ],
+ "wind": [
+  {
+   "id": "W3200775548",
+   "y": 2021,
+   "s": "The results show a considerable worsening of urban ventilation with increasing building density with a reduction in the mean wind velocity up to 62% experienced at the pedestrian level (zp).",
+   "nums": [
+    "62%"
+   ]
+  },
+  {
+   "id": "W4391265097",
+   "y": 2024,
+   "s": "The main contribution to outdoor thermal comfort is provided by solar irradiation affecting the comfort indexes values up to 50%, the second is the wind velocity affecting up to 25% the thermal comfort indexes.",
+   "nums": [
+    "50%",
+    "25%"
+   ]
+  },
+  {
+   "id": "W2055973239",
+   "y": 2005,
+   "s": "The present study addresses the issue of outdoor thermal comfort in a hot and dry climate in relation to urban geometry.This experimental work, conducted in an old desert city, aims to provide some quantitative knowledge on the effectiveness of traditional design forms in ensuring a comfortable thermal environment outdoors under extreme summer conditions.The study focused on the role of the geomet",
+   "nums": [
+    "32.40"
+   ]
+  },
+  {
+   "id": "W2277256083",
+   "y": 2016,
+   "s": "It was found that the microscopic speed resemble a normal distribution with a mean of 1.38 m/second and standard deviation of 0.37 m/second.",
+   "nums": [
+    "1.38 m/s",
+    "0.37 m/s"
+   ]
+  },
+  {
+   "id": "W1839452767",
+   "y": 2019,
+   "s": "Although the trees lowered the wind speed up to 45% of the maximum values, the thermal comfort was improved considerably as the physiologically equivalent temperature (PET) was reduced by up to 12°C.",
+   "nums": [
+    "45%",
+    "12°C"
+   ]
+  },
+  {
+   "id": "W2054889709",
+   "y": 2011,
+   "s": "It is observed that 15th-percentile speeds are in the range of 0.83–1.02 m/s, which is less than the crossing speed (1.2 m/s) used in pedestrian facility designs.",
+   "nums": [
+    "0.83–1.02 m/s",
+    "1.2 m/s"
+   ]
+  },
+  {
+   "id": "W2054889709",
+   "y": 2011,
+   "s": "It is suggested to use 0.95 m/s as the crossing speed for facility design.",
+   "nums": [
+    "0.95 m/s"
+   ]
+  },
+  {
+   "id": "W2054889709",
+   "y": 2011,
+   "s": "This can be modified to 0.79 and 0.91 m/s, respectively, if the proportion of older or female pedestrians is high.",
+   "nums": [
+    "0.79",
+    "0.91 m/s"
+   ]
+  },
+  {
+   "id": "W2083659651",
+   "y": 2006,
+   "s": "Urban wind speeds ranging from 1.0 to 2.0 m/s are recommended for pedestrian comfort in shade on typical clear sunny days in summer Hong Kong.",
+   "nums": [
+    "1.0 to 2.0 m/s"
+   ]
+  },
+  {
+   "id": "W1577076086",
+   "y": 2009,
+   "s": "* The walking speed will settle at 0 m/s at a specific maximum crowd density.",
+   "nums": [
+    "0 m/s"
+   ]
+  },
+  {
+   "id": "W2749382328",
+   "y": 2017,
+   "s": "Experiments showed that a wind catcher enhances pedestrian-level wind speed in the target canyon by 2.5 times.",
+   "nums": [
+    "2.5"
+   ]
+  },
+  {
+   "id": "W70378696",
+   "y": 1984,
+   "s": "The trajectories indicate the presence of a primary vortex cell, provided the ambient wind velocity exceeds 1.5 to 2.0 m s/sup -1/.",
+   "nums": [
+    "1.5 to 2.0 m"
+   ]
+  },
+  {
+   "id": "W2972170500",
+   "y": 2019,
+   "s": "The simulation model parameters calibration results showed that a) the pedestrians walking speed is 1.0 ~ 1.5m/s;",
+   "nums": [
+    "1.0",
+    "1.5m/s"
+   ]
+  },
+  {
+   "id": "W4392245270",
+   "y": 2024,
+   "s": "Compared with the control cases ( AR = 1, 1.5, and 2), the wind speed at the height of 0.3 m (0.25 H ) was reduced by 15%-34% in GW cases under three weather conditions (sunny, cloudy and rainy).",
+   "nums": [
+    "1.5",
+    "0.3 m",
+    "0.25",
+    "15%",
+    "-34%"
+   ]
+  },
+  {
+   "id": "W1993031224",
+   "y": 2013,
+   "s": "The results show that the most effective adaptation measure was increased wind speed (maximal 15 K PET reduction).",
+   "nums": [
+    "15 K"
+   ]
+  },
+  {
+   "id": "W2116976326",
+   "y": 2010,
+   "s": "The temperature and velocity patterns were discussed in idealized street canyons of different aspect ratios (0.5–2.0) with varying ambient wind speeds (0.5–1.5 m/s) and Δθs−a (2–8 K).",
+   "nums": [
+    "0.5–2.0",
+    "0.5–1.5 m/s",
+    "2–8 K"
+   ]
+  },
+  {
+   "id": "W2169786751",
+   "y": 2014,
+   "s": "Short–time variations of wind velocity magnitude were simulated assuming a sinusoidal function with average magnitude = 4 m s−1;",
+   "nums": [
+    "4 m"
+   ]
+  }
+ ],
+ "sound": [
+  {
+   "id": "W1990188462",
+   "y": 2010,
+   "s": "The water sound, which had 3 dB less sound pressure level, was evaluated as preferable when the levels of road traffic noise were 55 or 75 dBA.",
+   "nums": [
+    "75 dBA"
+   ]
+  }
+ ],
+ "isovist": [],
+ "tree": [
+  {
+   "id": "W3023604562",
+   "y": 2020,
+   "s": "Streets shaded by trees with a canyon aspect ratio of between 1.18 and 1.70 reduce heat stress in outdoor spaces.",
+   "nums": [
+    "1.18",
+    "1.70"
+   ]
+  },
+  {
+   "id": "W2274099244",
+   "y": 2016,
+   "s": "At another set of receptor locations that were on average 5 m from roadways and underneath preexisting tree cover, cool pavements caused significant reductions in surface air temperatures and small changes in mean radiant temperature during the day, leading to decreases in PET of 1.1 °C, and consequent improvements in thermal comfort.",
+   "nums": [
+    "5 m",
+    "1.1 °C"
+   ]
+  },
+  {
+   "id": "W4307056318",
+   "y": 2022,
+   "s": "Importantly, planting a shade tree on a street where none currently exist provides approximately 1.5–2 times as much radiative cooling to pedestrians as planting the same tree on a street where most of the sidewalk already benefits from tree shade.",
+   "nums": [
+    "1.5–2"
+   ]
+  },
+  {
+   "id": "W2045241207",
+   "y": 2013,
+   "s": "강남구 테헤란로 4개 구간에 대해 측정한 결과, 가로수에 의해 일사가 차단된 녹음(shade)지점 WBGT 지수는 최저 $27.40^{\\circ}C$ ~최고 $30.60^{\\circ}C$ 로 나타났으며, 일사(sun)지점은 최저 $28.45^{\\circ}C$ ~최고 $34.2^{\\circ}C$ 로 나타났다.",
+   "nums": [
+    "27.40",
+    "30.60",
+    "28.45",
+    "34.2"
+   ]
+  },
+  {
+   "id": "W2045241207",
+   "y": 2013,
+   "s": "On the other hand, if the WBGT is around 29, or 3 degrees lower, slower walking, light works or sports are allowable, 4) On site questionnaire survey confirms the thermal comforts under the tree shades, and we even could not get survey subjects on the sunny parts of the sidewalks, 5) We strongly recommend change of guidelines for urban street trees from \"one row of street trees on 6m~8m intervals\"",
+   "nums": [
+    "6m",
+    "8m"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "Tree shading along E–W streets reduced Tmrt by 7.34 °C, and neighbourhoods with higher tree cover of 24 % demonstrated improved OTC.",
+   "nums": [
+    "7.34 °C",
+    "24 %"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "Unshaded asphalt surfaces recorded Tmrt values up to 11.15 °C higher than shaded counterparts.",
+   "nums": [
+    "11.15 °C"
+   ]
+  },
+  {
+   "id": "W1949841688",
+   "y": 2015,
+   "s": "The reductions in air temperature under high-percentage canopy cover were greater for E-W streets (2.1°C) than for N-S streets (0.9°C).",
+   "nums": [
+    "2.1°C",
+    "0.9°C"
+   ]
+  },
+  {
+   "id": "W3167078479",
+   "y": 2021,
+   "s": "On three similar east–west orientated streets with different degrees of tree cover—low (13%), medium (35%), and high (75%), urban microclimatic parameters and human physiological indices for six male students were simultaneously measured on three cloudless days in summer 2018.",
+   "nums": [
+    "13%",
+    "35%",
+    "75%"
+   ]
+  },
+  {
+   "id": "W3167078479",
+   "y": 2021,
+   "s": "The frequency of strong heat stress (PET > 35 °C) was 64%, 11%, and 0%, respectively, for streets with low, medium, and high tree cover.",
+   "nums": [
+    "35 °C",
+    "64%",
+    "11%",
+    "0%"
+   ]
+  },
+  {
+   "id": "W4319316700",
+   "y": 2023,
+   "s": "The perceived air temperature (Physiological Equivalent Temperature—PET index) can decrease by up to 15 °C in well-shaded locations and near building corners, while nitrogen oxides can be reduced by up to 87% when considering a more radical pedestrianization scenario.",
+   "nums": [
+    "15 °C",
+    "87%"
+   ]
+  },
+  {
+   "id": "W4411047161",
+   "y": 2025,
+   "s": "Despite their relatively small effect on air temperature during the day, trees provide significant shade by intercepting solar radiation, reducing mean radiant temperature (up to 16 °C) and enhancing outdoor thermal comfort, a major benefit of street trees in hot arid climates.",
+   "nums": [
+    "16 °C"
+   ]
+  },
+  {
+   "id": "W3216255298",
+   "y": 2021,
+   "s": "UGI is found to cool European cities by 1.07 °C on average, and up to 2.9 °C, but in order to achieve a 1 °C drop in urban temperatures, a tree cover of at least 16% is required.",
+   "nums": [
+    "1.07 °C",
+    "2.9 °C",
+    "1 °C",
+    "16%"
+   ]
+  },
+  {
+   "id": "W1978443730",
+   "y": 2012,
+   "s": "Two types of scenarios were tested, one being 50% of tree coverage and the other being 30% of grass coverage with modified building design.",
+   "nums": [
+    "50%",
+    "30%"
+   ]
+  },
+  {
+   "id": "W4212779166",
+   "y": 2022,
+   "s": "We find that the distance walked in the shade is discounted by a factor of 0.86 compared to the distance walked in the sun, and that shadows cast by buildings have a stronger effect than trees.",
+   "nums": [
+    "0.86"
+   ]
+  },
+  {
+   "id": "W2066358726",
+   "y": 2011,
+   "s": "A reduction of up to 15°C in daytime PET is achieved by adding a dense tree cover (LAI = 6.4) over a grass lawn and up to 20°C by adding the tree cover over the hard pavement with an albedo of 0.2.",
+   "nums": [
+    "15°C",
+    "6.4",
+    "20°C",
+    "0.2"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "First, using xeric landscaping as a base, we created eight tree planting scenarios (from 0% canopy cover to 30% canopy cover) for the neighborhood to characterize the relationship between canopy cover and daytime cooling benefit of trees.",
+   "nums": [
+    "0%",
+    "30%"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "Findings suggest that the relationship between percent canopy cover and air temperature reduction is linear, with 0.14 °C cooling per percent increase in tree cover for the neighborhood under investigation.",
+   "nums": [
+    "0.14 °C"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "An increase in tree canopy cover from the current 10% to a targeted 25% resulted in an average daytime cooling benefit of up to 2.0 °C in residential neighborhoods at the local scale.",
+   "nums": [
+    "10%",
+    "25%",
+    "2.0 °C"
+   ]
+  },
+  {
+   "id": "W2942204770",
+   "y": 2019,
+   "s": "(2) with a tree coverage ratio >37.8% (or CVC > 1.8 m3/m2), the pedestrian-level PM2.5 could meet the World Health Organization’s air quality guidelines (IT-1) standards in the park;",
+   "nums": [
+    "37.8%",
+    "1.8",
+    "2.5"
+   ]
+  },
+  {
+   "id": "W2942204770",
+   "y": 2019,
+   "s": "and (4) the most economical and reasonable tree coverage ratio and CVC to reduce atmospheric PM in urban parks should be 30% and 1.8 m3/m2, respectively.",
+   "nums": [
+    "30%",
+    "1.8"
+   ]
+  },
+  {
+   "id": "W3082253422",
+   "y": 2020,
+   "s": "In the park, trees were grouped according to their height (<10 m, 10–20 m, >20 m) and canopy density (low, high), while the effect of canopy cover was tested using streets with high (31%) and low (11%) cover.",
+   "nums": [
+    "10 m",
+    "10–20 m",
+    "20 m",
+    "31%",
+    "11%"
+   ]
+  },
+  {
+   "id": "W3082253422",
+   "y": 2020,
+   "s": "High canopy cover of street trees reduced daytime air temperatures more, resulting in a lower number of days with hot (>35 °C) and extreme (>40 °C) air temperatures compared to the street that had low canopy cover.",
+   "nums": [
+    "35 °C",
+    "40 °C"
+   ]
+  },
+  {
+   "id": "W3216793944",
+   "y": 2021,
+   "s": "Varying levels of SVF and tree cover in the sites allowed the construction of multivariate models, which revealed that, during common summer afternoon conditions, decreases of SVF by 12.5% or increases of tree cover by 25% can reduce the UTCI by 1°.",
+   "nums": [
+    "12.5%",
+    "25%"
+   ]
+  },
+  {
+   "id": "W7167818643",
+   "y": 2026,
+   "s": "Across the network, we observed LST ranges from 19.5 °C to 39.1 °C, while canopy coverage ranged from 0 to 70.6%.",
+   "nums": [
+    "19.5 °C",
+    "39.1 °C",
+    "0 to 70.6%"
+   ]
+  },
+  {
+   "id": "W7167818643",
+   "y": 2026,
+   "s": "For a representative origin–destination pair, the coolest route reduces average LST by nearly 5 °C and almost triples canopy coverage compared with the shortest path, although at the cost of a 72% longer distance.",
+   "nums": [
+    "5 °C",
+    "72%"
+   ]
+  },
+  {
+   "id": "W2083659651",
+   "y": 2006,
+   "s": "Urban wind speeds ranging from 1.0 to 2.0 m/s are recommended for pedestrian comfort in shade on typical clear sunny days in summer Hong Kong.",
+   "nums": [
+    "1.0 to 2.0 m/s"
+   ]
+  },
+  {
+   "id": "W4404373409",
+   "y": 2024,
+   "s": "By contrast, green areas were found to enhance bioclimatic comfort by reducing perceived temperatures by up to 20% in shaded and vegetated zones.",
+   "nums": [
+    "20%"
+   ]
+  },
+  {
+   "id": "W4408672995",
+   "y": 2025,
+   "s": "A simulated case study in a neighborhood in La Rochelle, France, evaluates six tree planting scenarios, with canopy cover ranging from 0% to 80%.",
+   "nums": [
+    "0%",
+    "80%"
+   ]
+  },
+  {
+   "id": "W4408672995",
+   "y": 2025,
+   "s": "Results indicate that a 20% canopy cover is a practical threshold for mitigating discomfort in moderate and warm climates.",
+   "nums": [
+    "20%"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(3) Compared with direct sunlight, the average UTCI decreased by 6.6 and 3.5 °C for building shade and tree shade environments, and the neutral UTCI in Dalian was found to be 18.8 °C.",
+   "nums": [
+    "6.6",
+    "3.5 °C",
+    "18.8 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(4) When UTCI ≥ 21.9 °C, the thermal acceptability rate in building shade remained the highest;",
+   "nums": [
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "when 10.2 °C ≤ UTCI < 21.9 °C, it was highest in tree shade;",
+   "nums": [
+    "10.2 °C",
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4392911406",
+   "y": 2024,
+   "s": "The measured data shows that the main difference in air temperature between shaded areas and areas exposed to sunlight is in the 0–0.5 m height range, and there is little difference in air temperature between the 0.5 m-2 m height range.Higher shades led to poorer ventilation and were more likely to cause local overheating.",
+   "nums": [
+    "0–0.5 m",
+    "0.5 m",
+    "-2 m"
+   ]
+  },
+  {
+   "id": "W7118719425",
+   "y": 2026,
+   "s": "Results show that unshaded areas can reach daily exposures of 700°C.h, while shaded zones under trees achieve up to 40 % reduction, though localized heating up to 25% may occur downwind of dense canopies.",
+   "nums": [
+    "700°C",
+    "40 %",
+    "25%"
+   ]
+  },
+  {
+   "id": "W3033754149",
+   "y": 2020,
+   "s": "In streets with a high-percentage tree canopy cover, afternoon air temperatures and mean radiant temperatures can be reduced by up to 3.3 °C and 13.9 °C, respectively, compared to a similar street with no tree shade.",
+   "nums": [
+    "3.3 °C",
+    "13.9 °C"
+   ]
+  },
+  {
+   "id": "W4223940093",
+   "y": 2022,
+   "s": "The dimension of the single artificial shade was 2 m × 2 m with heights varying 2–2.5 m.",
+   "nums": [
+    "2 m",
+    "2 m",
+    "2–2.5 m"
+   ]
+  },
+  {
+   "id": "W4223940093",
+   "y": 2022,
+   "s": "The calculated physiological equivalent temperatures (PET) and thermal comfortable hours beneath different shade structures were assessed using RayMan 1.2 software.",
+   "nums": [
+    "1.2"
+   ]
+  },
+  {
+   "id": "W4411059777",
+   "y": 2025,
+   "s": "3 °C less than the unshaded areas.",
+   "nums": [
+    "3 °C"
+   ]
+  },
+  {
+   "id": "W4416784008",
+   "y": 2025,
+   "s": "Across ten optimization runs, the workflow achieved a 68% increase in shade coverage, an 11.5 °C reduction in mean radiant temperature (MRT), and a 72% decrease in the spatial extent of high-risk heat-exposure zones, demonstrating its potential for climate-adaptive street design in hot-arid environments.",
+   "nums": [
+    "68%",
+    "11.5 °C",
+    "72%"
+   ]
+  },
+  {
+   "id": "W4402688128",
+   "y": 2024,
+   "s": "Temperature data under the canopy (1 to 5 m from the ground) compared to the air temperature of the grass that was shaded indicated temperature differences of between 2.3 and 7.9°C at 5 m and between 1.9 and 5.6°C at 1 m (for both species) with a bigger reduction attributed to S.",
+   "nums": [
+    "1 to 5 m",
+    "2.3",
+    "7.9°C",
+    "5 m",
+    "1.9",
+    "5.6°C",
+    "1 m"
+   ]
+  },
+  {
+   "id": "W2898371170",
+   "y": 2018,
+   "s": "The optimum surface temperature was found when pervious surface was around 60% and tree coverage was around 25%.",
+   "nums": [
+    "60%",
+    "25%"
+   ]
+  },
+  {
+   "id": "W3145090086",
+   "y": 2016,
+   "s": "The most comfortable location had shade, and the PET was $24.6^{\\circ}C$ .",
+   "nums": [
+    "24.6"
+   ]
+  },
+  {
+   "id": "W3046305014",
+   "y": 2020,
+   "s": "ENVI-met was unable to resolve intra-domain spatial variability of TMRT and exhibited large errors with RMSE up to 25.5 °C for engineered shade.",
+   "nums": [
+    "25.5 °C"
+   ]
+  }
+ ],
+ "temp": [
+  {
+   "id": "W2056968363",
+   "y": 2007,
+   "s": "On average, urban temperatures may be 1–3°C warmer, but under appropriate meteorological conditions (calm, cloudless nights in winter) air temperatures can be more than 10°C warmer than surrounding rural environments (Oke 1981).",
+   "nums": [
+    "1–3°C",
+    "10°C"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "• Inside green spaces, mean PET can vary up to 4 ℃ among different design scenarios.",
+   "nums": [
+    "4 ℃"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "The study shows that inside the small green spaces, the mean Physiological Equivalent Temperature (PET) of different cases can vary up to 4 ℃.",
+   "nums": [
+    "4 ℃"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "For a good cooling outside the green spaces, a configuration of grouped small green areas can reduce the PET by 1.3 ℃, with distribution of the green spaces being the most influential factor.",
+   "nums": [
+    "1.3 ℃"
+   ]
+  },
+  {
+   "id": "W4403013334",
+   "y": 2024,
+   "s": "But for neighbourhoods with radial streets, it is more related to the spatial distribution, which can result in a reduction of 10.2 ℃ in PCI for linear green spaces next to narrow streets.",
+   "nums": [
+    "10.2 ℃"
+   ]
+  },
+  {
+   "id": "W3085110501",
+   "y": 2020,
+   "s": "Because of this effect, air temperature within the 130 m and 280 m distance of the park was, respectively, 1.6 °C and 0.9 °C lower than the temperature at the 520 m distance (the nearest heat island).",
+   "nums": [
+    "130 m",
+    "280 m",
+    "1.6 °C",
+    "0.9 °C",
+    "520 m"
+   ]
+  },
+  {
+   "id": "W2274099244",
+   "y": 2016,
+   "s": "This reflected radiation intensified the mean radiant temperature and consequently increased physiological equivalent temperature (PET) by 2.2 °C during the day, reducing the thermal comfort of pedestrians.",
+   "nums": [
+    "2.2 °C"
+   ]
+  },
+  {
+   "id": "W2274099244",
+   "y": 2016,
+   "s": "At another set of receptor locations that were on average 5 m from roadways and underneath preexisting tree cover, cool pavements caused significant reductions in surface air temperatures and small changes in mean radiant temperature during the day, leading to decreases in PET of 1.1 °C, and consequent improvements in thermal comfort.",
+   "nums": [
+    "5 m",
+    "1.1 °C"
+   ]
+  },
+  {
+   "id": "W7212631283",
+   "y": 2026,
+   "s": "The integrated scenario produced the greatest impact, reducing average UTCI by 5.1°C and increasing comfortable hours by 3.3 hours per day across all sites.",
+   "nums": [
+    "5.1°C",
+    "3.3"
+   ]
+  },
+  {
+   "id": "W2065623771",
+   "y": 2013,
+   "s": "PET values, high as 34°C, are observed to prevail during the afternoons especially in the east-west oriented streets, and buildings’ height of 5 m has less effect on the thermal comfort.",
+   "nums": [
+    "34°C",
+    "5 m"
+   ]
+  },
+  {
+   "id": "W4391538823",
+   "y": 2024,
+   "s": "All scenarios reduced PET values across the street, with optimal reductions of −2.0 °C, −3.1 °C, −1.3 °C, −1.7 °C, and −1.2 °C in Sc1, Sc2, Sc3, Sc4, and Sc5, respectively.",
+   "nums": [
+    "2.0 °C",
+    "3.1 °C",
+    "1.3 °C",
+    "1.7 °C",
+    "1.2 °C"
+   ]
+  },
+  {
+   "id": "W4391538823",
+   "y": 2024,
+   "s": "Concerning pedestrian areas, the optimal results durations were at the southwest side below the arcades’ sidewalks during peak hours: Sc2, Sc3, Sc4, Sc5 (2.2 °C–3 H, 2.3 °C–3 H, 2.4 °C–3 H, 2.5 °C–2 H).",
+   "nums": [
+    "2.2 °C",
+    "2.3 °C",
+    "2.4 °C",
+    "2.5 °C"
+   ]
+  },
+  {
+   "id": "W2784419607",
+   "y": 2018,
+   "s": "Generally, the maximum and minimum air temperature spatial differences in the study area ranged from 3.2 to 6.5 °C, indicating the significant effects of urban morphology on the air temperatures.",
+   "nums": [
+    "3.2 to 6.5 °C"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "Arcades and courtyards contributed to significant reductions in radiant temperatures up to 6.28 °C and 7.44 °C, respectively.",
+   "nums": [
+    "6.28 °C",
+    "7.44 °C"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "Tree shading along E–W streets reduced Tmrt by 7.34 °C, and neighbourhoods with higher tree cover of 24 % demonstrated improved OTC.",
+   "nums": [
+    "7.34 °C",
+    "24 %"
+   ]
+  },
+  {
+   "id": "W4412999250",
+   "y": 2024,
+   "s": "Unshaded asphalt surfaces recorded Tmrt values up to 11.15 °C higher than shaded counterparts.",
+   "nums": [
+    "11.15 °C"
+   ]
+  },
+  {
+   "id": "W1949841688",
+   "y": 2015,
+   "s": "The reductions in air temperature under high-percentage canopy cover were greater for E-W streets (2.1°C) than for N-S streets (0.9°C).",
+   "nums": [
+    "2.1°C",
+    "0.9°C"
+   ]
+  },
+  {
+   "id": "W2833340212",
+   "y": 2018,
+   "s": "The simulations are found to be able to reproduce measured air temperatures inside central Antwerp with an average absolute difference of 0.88 °C.",
+   "nums": [
+    "0.88 °C"
+   ]
+  },
+  {
+   "id": "W2833340212",
+   "y": 2018,
+   "s": "The results demonstrate that compared to the air temperatures in the rural area, on average, air temperatures at the urban sites away and close to the park are 3.3 °C and 2.4 °C higher, respectively.",
+   "nums": [
+    "3.3 °C",
+    "2.4 °C"
+   ]
+  },
+  {
+   "id": "W3167078479",
+   "y": 2021,
+   "s": "The frequency of strong heat stress (PET > 35 °C) was 64%, 11%, and 0%, respectively, for streets with low, medium, and high tree cover.",
+   "nums": [
+    "35 °C",
+    "64%",
+    "11%",
+    "0%"
+   ]
+  },
+  {
+   "id": "W7132839862",
+   "y": 2026,
+   "s": "• Presents an original multi-scalar ENVI-met assessment integrating building- and neighborhood-scale passive cooling • Evaluates six retrofit scenarios (S0–S5) for a residential neighborhood in Al Ain, UAE, under extreme hot-arid conditions • Integrates cool pavements, green walls, native Prosopis cineraria (Al Ghaf) trees, and super cool reflective roofs • Achieves surface temperature reductions ",
+   "nums": [
+    "10–12°C",
+    "3.5°C",
+    "1.2 m",
+    "5–8°C",
+    "23–34.6°C"
+   ]
+  },
+  {
+   "id": "W7132839862",
+   "y": 2026,
+   "s": "Results reveal that the integrated application of these strategies reduces pedestrian-level air temperature by up to 3.5°C, peak surface temperature by approximately 10–12°C, and mean radiant temperature by up to 10-12°C during peak summer afternoon conditions.",
+   "nums": [
+    "3.5°C",
+    "10–12°C",
+    "10-12°C"
+   ]
+  },
+  {
+   "id": "W2060496785",
+   "y": 2011,
+   "s": "The main results obtained from different analyses are: (i) SVF for the southern half of the upper hemisphere (SVF90-270) is more suitable to characterise the sites with respect to the thermal perception of citizens than SVF for the whole upper hemisphere (SVF1-360), (ii) in contrast to wide E-W oriented street canyons, narrow E-W oriented street canyons have larger spatial differences in Ta, Tmrt ",
+   "nums": [
+    "10 %",
+    "0.2 °C",
+    "3.6 °C",
+    "1.4 °C"
+   ]
+  },
+  {
+   "id": "W3006841266",
+   "y": 2020,
+   "s": "This improvement is also evident observing the spatial distribution of MRT with a difference of 7 °C in the Lecce neighborhood and 3 °C in Lahti.",
+   "nums": [
+    "7 °C",
+    "3 °C"
+   ]
+  },
+  {
+   "id": "W3006841266",
+   "y": 2020,
+   "s": "In winter, thermal discomfort is observed in the presence of vegetation with a difference of 1.3 °C in the Lecce neighborhood and 1.5 °C in Lahti in terms of MRT.",
+   "nums": [
+    "1.3 °C",
+    "1.5 °C"
+   ]
+  },
+  {
+   "id": "W3139839207",
+   "y": 2021,
+   "s": "According to the results it is possible to confirm that the use of green roofs and urban greenery can decrease the mean radiant temperature until about 10℃ during summer season, improving outdoor thermal comfort conditions and energy savings with a reduction of 12% for space cooling energy consumption.",
+   "nums": [
+    "10℃",
+    "12%"
+   ]
+  },
+  {
+   "id": "W4319316700",
+   "y": 2023,
+   "s": "The perceived air temperature (Physiological Equivalent Temperature—PET index) can decrease by up to 15 °C in well-shaded locations and near building corners, while nitrogen oxides can be reduced by up to 87% when considering a more radical pedestrianization scenario.",
+   "nums": [
+    "15 °C",
+    "87%"
+   ]
+  },
+  {
+   "id": "W4411047161",
+   "y": 2025,
+   "s": "Large city-wide increases of a drought tolerant tree species cool air temperature mainly during the nighttime (up to 1.5 °C), with daytime effects being limited due to leaves shedding sensible instead of latent heat as stomata close in response to high vapor pressure deficits.",
+   "nums": [
+    "1.5 °C"
+   ]
+  },
+  {
+   "id": "W4411047161",
+   "y": 2025,
+   "s": "Increased evaporative cooling is achieved with a different tree species (double at night, and reaching 0.4 °C during the day), but water requirements increase threefold.",
+   "nums": [
+    "0.4 °C"
+   ]
+  },
+  {
+   "id": "W4411047161",
+   "y": 2025,
+   "s": "Despite their relatively small effect on air temperature during the day, trees provide significant shade by intercepting solar radiation, reducing mean radiant temperature (up to 16 °C) and enhancing outdoor thermal comfort, a major benefit of street trees in hot arid climates.",
+   "nums": [
+    "16 °C"
+   ]
+  },
+  {
+   "id": "W2922464223",
+   "y": 2019,
+   "s": "We estimated that neutral temperature, when all respondents experience neither heat nor cold stress, is 26.2 °C;",
+   "nums": [
+    "26.2 °C"
+   ]
+  },
+  {
+   "id": "W2922464223",
+   "y": 2019,
+   "s": "acceptable temperatures, when only slight heat or cold stress is experienced, range between 21.6 and 31.6 °C;",
+   "nums": [
+    "21.6",
+    "31.6 °C"
+   ]
+  },
+  {
+   "id": "W2922464223",
+   "y": 2019,
+   "s": "and preferred ('ideal') temperature for all respondents is 24.2 °C.",
+   "nums": [
+    "24.2 °C"
+   ]
+  },
+  {
+   "id": "W2972867788",
+   "y": 2019,
+   "s": "The results showed that the cooling effect of this urban park of 125 ha area at a distance of 150 m could reduce air temperatures by an average of 0.63 °C and 1.28 °C for distances of 380 m and 665 meters from the park.",
+   "nums": [
+    "150 m",
+    "0.63 °C",
+    "1.28 °C",
+    "380 m"
+   ]
+  },
+  {
+   "id": "W2972867788",
+   "y": 2019,
+   "s": "Moreover, the degree of the physiological equivalent temperature (PET) index at a distance of 150 meters from the park is on average 2 °C PET and 2.3 °C PET less compared to distances of 380 m and 665 m, respectively.",
+   "nums": [
+    "2 °C",
+    "2.3 °C",
+    "380 m",
+    "665 m"
+   ]
+  },
+  {
+   "id": "W3216255298",
+   "y": 2021,
+   "s": "UGI is found to cool European cities by 1.07 °C on average, and up to 2.9 °C, but in order to achieve a 1 °C drop in urban temperatures, a tree cover of at least 16% is required.",
+   "nums": [
+    "1.07 °C",
+    "2.9 °C",
+    "1 °C",
+    "16%"
+   ]
+  },
+  {
+   "id": "W2260723173",
+   "y": 2010,
+   "s": "Rapid urbanization in Phoenix, Arizona has increased the nighttime temperature by 5°C, and the average daily temperatures by 3.1°C.",
+   "nums": [
+    "5°C",
+    "3.1°C"
+   ]
+  },
+  {
+   "id": "W4384296771",
+   "y": 2023,
+   "s": "Equally distributed planting arrangement has a significant impact providing the highest comfort improvement (9.8 ℃ PET reduction) at the pedestrian level.",
+   "nums": [
+    "9.8 ℃"
+   ]
+  },
+  {
+   "id": "W1996187877",
+   "y": 2007,
+   "s": "It is found that high albedo at street level gives the lowest air temperature during daytime, although the reduction is only about 1 °C.",
+   "nums": [
+    "1 °C"
+   ]
+  },
+  {
+   "id": "W1996187877",
+   "y": 2007,
+   "s": "the increase of H/W ratio from about 1 to 3 leads to a decrease in PET by about 10 °C.",
+   "nums": [
+    "10 °C"
+   ]
+  },
+  {
+   "id": "W2027811510",
+   "y": 2014,
+   "s": "In summer, urban areas show a larger number of discomfort hours (PET > 23 °C) compared to the reference rural area.",
+   "nums": [
+    "23 °C"
+   ]
+  },
+  {
+   "id": "W2883689404",
+   "y": 2018,
+   "s": "Results show that on average the mean near‐surface air temperature in urban areas decreases by 3.06 °C over the entire contiguous United States with the shading effect.",
+   "nums": [
+    "3.06 °C"
+   ]
+  },
+  {
+   "id": "W2889262240",
+   "y": 2018,
+   "s": "It is found that the maximum improvement of PET reduction with suggested landscape designs is about 12°C, and high-albedo pavement materials and water bodies are not effective in reducing heat stress in hot and humid climate conditions.",
+   "nums": [
+    "12°C"
+   ]
+  },
+  {
+   "id": "W4405248627",
+   "y": 2024,
+   "s": "Tree implementation reduces peak monthly temperatures to below 26 °C in 83% of the cities.",
+   "nums": [
+    "26 °C",
+    "83%"
+   ]
+  },
+  {
+   "id": "W4405248627",
+   "y": 2024,
+   "s": "Trees can lower pedestrian-level temperatures by up to 12 °C through large radiation blockage and transpiration.",
+   "nums": [
+    "12 °C"
+   ]
+  },
+  {
+   "id": "W4405248627",
+   "y": 2024,
+   "s": "In tropical, temperate, and continental climates, a mixed-use of deciduous and evergreen trees in open urban morphology provides approximately 0.5 °C more cooling than a single species approach.",
+   "nums": [
+    "0.5 °C"
+   ]
+  },
+  {
+   "id": "W2066358726",
+   "y": 2011,
+   "s": "The result shows that an increase of 0.4 in the ground surface albedo overall reduces the thermal comfort, as indicated by an increase of 5–7°C in PET during the day with a marginal decrease of less than 1°C at night.",
+   "nums": [
+    "0.4",
+    "5–7°C",
+    "1°C"
+   ]
+  },
+  {
+   "id": "W2066358726",
+   "y": 2011,
+   "s": "A reduction of up to 15°C in daytime PET is achieved by adding a dense tree cover (LAI = 6.4) over a grass lawn and up to 20°C by adding the tree cover over the hard pavement with an albedo of 0.2.",
+   "nums": [
+    "15°C",
+    "6.4",
+    "20°C",
+    "0.2"
+   ]
+  },
+  {
+   "id": "W2969365881",
+   "y": 2019,
+   "s": "During summer daytime, the rural zone exhibits a higher average LST than the urban area, resulting in a mean negative SUHI, typical of arid cities, while a slight positive SUHI (mean intensity of 0.4 °C) during winter daytime is present.",
+   "nums": [
+    "0.4 °C"
+   ]
+  },
+  {
+   "id": "W2969365881",
+   "y": 2019,
+   "s": "An evident positive SUHI is found only during summer (1.8 °C) and winter nighttime (3.2 °C).",
+   "nums": [
+    "1.8 °C",
+    "3.2 °C"
+   ]
+  },
+  {
+   "id": "W2969365881",
+   "y": 2019,
+   "s": "Higher LST values in the rural area than in the urban area are also confirmed by the field campaign, with an average difference of about 5 °C.",
+   "nums": [
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W3133184904",
+   "y": 2021,
+   "s": "An increase in tree and ground vegetation fractions provides a higher average UTCI reduction compared to a change in vegetation traits (0.9 – 2.9 °C vs.",
+   "nums": [
+    "0.9 – 2.9 °C"
+   ]
+  },
+  {
+   "id": "W3133184904",
+   "y": 2021,
+   "s": "0.7 – 1.1 °C during midday, 10 month average).",
+   "nums": [
+    "0.7 – 1.1 °C"
+   ]
+  },
+  {
+   "id": "W4293577100",
+   "y": 2022,
+   "s": "Comparing simulation results, it is concluded that evergreen trees located at the building edge can provide up to 6°C cooler walls and up to 3.8°C when placed at the building centre.",
+   "nums": [
+    "6°C",
+    "3.8°C"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "The findings indicated that the neutral PET during spring and summer was 22.30 °C and 24.55 °C, respectively, whilst the neutral UTCI was 18.75 °C and 26 °C, respectively, with the neutral temperature in summer being significantly higher than that in spring.",
+   "nums": [
+    "22.30 °C",
+    "24.55 °C",
+    "18.75 °C",
+    "26 °C"
+   ]
+  },
+  {
+   "id": "W4387184926",
+   "y": 2023,
+   "s": "Finally, regression analysis demonstrated that the acceptable PET range for 90% of cases during both seasons in Shanghai is between 25.0 °C and 32.1 °C, and the UTCI range is between 24.2 °C and 27.7 °C.",
+   "nums": [
+    "90%",
+    "25.0 °C",
+    "32.1 °C",
+    "24.2 °C",
+    "27.7 °C"
+   ]
+  },
+  {
+   "id": "W7151886201",
+   "y": 2026,
+   "s": "Application-oriented studies indicate that urban interventions—particularly tree shading—commonly reduce MRT by 5–15 °C locally, with spatially averaged reductions of 2–7 °C depending on urban form.",
+   "nums": [
+    "5–15 °C",
+    "2–7 °C"
+   ]
+  },
+  {
+   "id": "W7151886201",
+   "y": 2026,
+   "s": "Recent data-driven and hybrid approaches enable scalable MRT prediction with typical errors of approximately 1–3 °C (RMSE), supporting city-scale assessment at substantially reduced computational cost when physically meaningful features are retained.",
+   "nums": [
+    "1–3 °C"
+   ]
+  },
+  {
+   "id": "W1839452767",
+   "y": 2019,
+   "s": "The field monitoring showed that the park was up to 2°C cooler than the square and the canyon.",
+   "nums": [
+    "2°C"
+   ]
+  },
+  {
+   "id": "W1839452767",
+   "y": 2019,
+   "s": "The simulations showed that incorporating street trees in the urban canyon had a limited cooling effect on the air temperature (up to 1.1°C), but led to a significant cooling of the street surface (up to 12°C) as well as a great reduction of the mean radiant temperature at pedestrian height (up to 24°C).",
+   "nums": [
+    "1.1°C",
+    "12°C",
+    "24°C"
+   ]
+  },
+  {
+   "id": "W1839452767",
+   "y": 2019,
+   "s": "Although the trees lowered the wind speed up to 45% of the maximum values, the thermal comfort was improved considerably as the physiologically equivalent temperature (PET) was reduced by up to 12°C.",
+   "nums": [
+    "45%",
+    "12°C"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "Findings suggest that the relationship between percent canopy cover and air temperature reduction is linear, with 0.14 °C cooling per percent increase in tree cover for the neighborhood under investigation.",
+   "nums": [
+    "0.14 °C"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "An increase in tree canopy cover from the current 10% to a targeted 25% resulted in an average daytime cooling benefit of up to 2.0 °C in residential neighborhoods at the local scale.",
+   "nums": [
+    "10%",
+    "25%",
+    "2.0 °C"
+   ]
+  },
+  {
+   "id": "W2020054819",
+   "y": 2014,
+   "s": "Cool roofs reduced neighborhood air temperatures by 0.3 °C when implemented on residential homes.",
+   "nums": [
+    "0.3 °C"
+   ]
+  },
+  {
+   "id": "W2067263407",
+   "y": 2010,
+   "s": "According to the ECHAM5‐based scenario, the daytime T mrt will increase by 3.2 °C by the end of this century.",
+   "nums": [
+    "3.2 °C"
+   ]
+  },
+  {
+   "id": "W2067263407",
+   "y": 2010,
+   "s": "This is 0.4° more than simulated increase in air temperature (2.8 °C) and is mainly a result of decreases in summer cloudiness.",
+   "nums": [
+    "0.4",
+    "2.8 °C"
+   ]
+  },
+  {
+   "id": "W2954916971",
+   "y": 2019,
+   "s": "Results showed that in summer, the proposed method can reduce the averaged UTCI from 31.17 to 27.43 °C, a decrease of about 3.74 °C, and reduce mean radiation temperature (MRT) from 43.94 to 41.29 °C, a decrease of about 2.65 °C.",
+   "nums": [
+    "31.17 to 27.43 °C",
+    "3.74 °C",
+    "43.94 to 41.29 °C",
+    "2.65 °C"
+   ]
+  },
+  {
+   "id": "W3021317682",
+   "y": 2020,
+   "s": "Results show that evapotranspiration of well-watered trees alone can decrease local 2 m air temperature at maximum by 3.1– 5.8 °C in the four climates during summer.",
+   "nums": [
+    "2 m",
+    "3.1– 5.8 °C"
+   ]
+  },
+  {
+   "id": "W3021317682",
+   "y": 2020,
+   "s": "While shading reduces surface temperatures, the interaction of a non-transpiring tree with radiation can increase 2 m air temperature by up to 1.6 – 2.1 °C in certain hours of the day at local scale, thus partially counteracting the evapotranspirative cooling effect.",
+   "nums": [
+    "2 m",
+    "1.6 – 2.1 °C"
+   ]
+  },
+  {
+   "id": "W3039254942",
+   "y": 2020,
+   "s": "Results pointed out that implementation of water features contributes to a significant reduction of ambient temperature reaching a maximum of 5 °C.",
+   "nums": [
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W3082253422",
+   "y": 2020,
+   "s": "High canopy cover of street trees reduced daytime air temperatures more, resulting in a lower number of days with hot (>35 °C) and extreme (>40 °C) air temperatures compared to the street that had low canopy cover.",
+   "nums": [
+    "35 °C",
+    "40 °C"
+   ]
+  },
+  {
+   "id": "W4225486196",
+   "y": 2022,
+   "s": "Results revealed significant differences in physiologically equivalent temperature (PET) and modified physiologically equivalent temperature (mPET) and between street segments with more than 18 °C (25 °C mPET) between the maximum and minimum values.",
+   "nums": [
+    "18 °C",
+    "25 °C"
+   ]
+  },
+  {
+   "id": "W7167818643",
+   "y": 2026,
+   "s": "Across the network, we observed LST ranges from 19.5 °C to 39.1 °C, while canopy coverage ranged from 0 to 70.6%.",
+   "nums": [
+    "19.5 °C",
+    "39.1 °C",
+    "0 to 70.6%"
+   ]
+  },
+  {
+   "id": "W7167818643",
+   "y": 2026,
+   "s": "For a representative origin–destination pair, the coolest route reduces average LST by nearly 5 °C and almost triples canopy coverage compared with the shortest path, although at the cost of a 72% longer distance.",
+   "nums": [
+    "5 °C",
+    "72%"
+   ]
+  },
+  {
+   "id": "W1956908576",
+   "y": 2015,
+   "s": "A water body temperature is capable of being lower than the surrounding urban environment around 2 - 6 °C.",
+   "nums": [
+    "2 - 6 °C"
+   ]
+  },
+  {
+   "id": "W2145072286",
+   "y": 2012,
+   "s": "Umbilical cord blood samples were collected and stored in the biobank at −80°C, alongside maternal blood samples taken at recruitment.",
+   "nums": [
+    "80°C"
+   ]
+  },
+  {
+   "id": "W2905900865",
+   "y": 2018,
+   "s": "The resulted value of Physiological Equivalent Temperature, PET at peak time was reduced from the initial result of ENVI-met (42.3 °C) in both sites to reach (38.7 °C) then (36.8 °C) after refinement with extra foliage.",
+   "nums": [
+    "42.3 °C",
+    "38.7 °C",
+    "36.8 °C"
+   ]
+  },
+  {
+   "id": "W2999700177",
+   "y": 2020,
+   "s": "Despite the physiological equivalent temperature (PET) level declination reaching 32.2 °C at 3:00 pm, thermal stress levels in compact areas had halved, providing ideal comfort levels that remained constant most of the day.",
+   "nums": [
+    "32.2 °C"
+   ]
+  },
+  {
+   "id": "W3094276178",
+   "y": 2020,
+   "s": "The literature survey showed that typical urban schoolyard design (i.e., dense surface materials, absence of trees) triggered high surface temperatures (that may exceed 58 °C) and increased absorption of radiative heat load (that may exceed 64 °C in terms of Mean Radiant Temperature) during a clear day with intense solar radiation.",
+   "nums": [
+    "58 °C",
+    "64 °C"
+   ]
+  },
+  {
+   "id": "W4390487319",
+   "y": 2023,
+   "s": "The results showed that the air temperature ranges from 31.01°C to 31.54°C, and the relative humidity ranges from 56.19% to 57.74%.",
+   "nums": [
+    "31.01°C",
+    "31.54°C",
+    "56.19%",
+    "57.74%"
+   ]
+  },
+  {
+   "id": "W4390487319",
+   "y": 2023,
+   "s": "The average THI value is 28.52 °C, which falls into the comfortable category.",
+   "nums": [
+    "28.52 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(3) Compared with direct sunlight, the average UTCI decreased by 6.6 and 3.5 °C for building shade and tree shade environments, and the neutral UTCI in Dalian was found to be 18.8 °C.",
+   "nums": [
+    "6.6",
+    "3.5 °C",
+    "18.8 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "(4) When UTCI ≥ 21.9 °C, the thermal acceptability rate in building shade remained the highest;",
+   "nums": [
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "when 10.2 °C ≤ UTCI < 21.9 °C, it was highest in tree shade;",
+   "nums": [
+    "10.2 °C",
+    "21.9 °C"
+   ]
+  },
+  {
+   "id": "W4281746616",
+   "y": 2022,
+   "s": "and when the UTCI < 10.2 °C, it was highest in sunlight.",
+   "nums": [
+    "10.2 °C"
+   ]
+  },
+  {
+   "id": "W4313244934",
+   "y": 2022,
+   "s": "At 15:00, the hottest time during the summer, the highest PET at pedestrian height was lowest in the scenario without trees, reaching 28.3 °C, and the highest was with full ash, reaching 34.3 °C.",
+   "nums": [
+    "28.3 °C",
+    "34.3 °C"
+   ]
+  },
+  {
+   "id": "W4313244934",
+   "y": 2022,
+   "s": "At the same time, the average difference in PET between the two scenarios was 1.4 °C.",
+   "nums": [
+    "1.4 °C"
+   ]
+  },
+  {
+   "id": "W7118719425",
+   "y": 2026,
+   "s": "Results show that unshaded areas can reach daily exposures of 700°C.h, while shaded zones under trees achieve up to 40 % reduction, though localized heating up to 25% may occur downwind of dense canopies.",
+   "nums": [
+    "700°C",
+    "40 %",
+    "25%"
+   ]
+  },
+  {
+   "id": "W2402931547",
+   "y": 2016,
+   "s": "A regression of subjective thermal sensation on physiological equivalent temperature yielded a neutral temperature of 28.6 °C.",
+   "nums": [
+    "28.6 °C"
+   ]
+  },
+  {
+   "id": "W2402931547",
+   "y": 2016,
+   "s": "The acceptable comfort range was 19.1 °C-38.1 °C with a preferred temperature of 20.8 °C.",
+   "nums": [
+    "19.1 °C",
+    "-38.1 °C",
+    "20.8 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "The calibration of the PET index, resulted in the definition of the thermal acceptability range of: “Cold” for PET values bellow 19 °C;",
+   "nums": [
+    "19 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "“Neutral” for PET values between 19 °C and 27 °C;",
+   "nums": [
+    "19 °C",
+    "27 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "“Hot” for PET values greater than 27 °C.",
+   "nums": [
+    "27 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "Neutral temperatures were 27.7 °C, in summer, and 15.9 °C, in winter;",
+   "nums": [
+    "27.7 °C",
+    "15.9 °C"
+   ]
+  },
+  {
+   "id": "W2516734039",
+   "y": 2016,
+   "s": "while preferred temperatures were 14.9 °C, in summer, and 20.9 °C, in winter.",
+   "nums": [
+    "14.9 °C",
+    "20.9 °C"
+   ]
+  },
+  {
+   "id": "W3014337145",
+   "y": 2020,
+   "s": "The comfort zone in SET* was found to be 19 - 30°C for HVAC spaces and 15 - 32°C for non-HVAC spaces.",
+   "nums": [
+    "19 - 30°C",
+    "15 - 32°C"
+   ]
+  },
+  {
+   "id": "W3014337145",
+   "y": 2020,
+   "s": "Maximum number of occupants was confirmed at 24 °C in SET* when the perceived thermal environment was evaluated to be most comfortable.",
+   "nums": [
+    "24 °C"
+   ]
+  },
+  {
+   "id": "W3033754149",
+   "y": 2020,
+   "s": "In streets with a high-percentage tree canopy cover, afternoon air temperatures and mean radiant temperatures can be reduced by up to 3.3 °C and 13.9 °C, respectively, compared to a similar street with no tree shade.",
+   "nums": [
+    "3.3 °C",
+    "13.9 °C"
+   ]
+  },
+  {
+   "id": "W3128936126",
+   "y": 2021,
+   "s": "The cooling effect of trees may range from 4 °C to 9 °C in UTCI, and the cooling effect of grass in comparison with artificial paved surfaces in open public places may be from 2 °C to 5 °C UTCI.",
+   "nums": [
+    "4 °C",
+    "9 °C",
+    "2 °C",
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W4205645786",
+   "y": 2022,
+   "s": "Mean AT of inner city sites were higher by 1.3 °C during summer and 5 °C during winter compared to sub-urban sites.",
+   "nums": [
+    "1.3 °C",
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W4205645786",
+   "y": 2022,
+   "s": "Consequently, out of 97 hot days (AT > 30 °C) in 3 years, 9 days above the extreme threshold of wet bulb globe temperature of 35 °C were recorded at a centre location compared to none at a sub-urban site.",
+   "nums": [
+    "30 °C",
+    "35 °C"
+   ]
+  },
+  {
+   "id": "W7135173559",
+   "y": 2026,
+   "s": "In rapidly urbanizing regions, urban heat island intensification can elevate local temperatures by 3–7°C, amplifying heat stress for millions of residents who depend on public transport for daily mobility.",
+   "nums": [
+    "3–7°C"
+   ]
+  },
+  {
+   "id": "W7135173559",
+   "y": 2026,
+   "s": "Cities in South Asia are projected to experience up to 75 days per year of “dangerous heat” (>40°C) by 2030, disproportionately increasing exposure for commuters who spend repeated periods in high radiation, confined, and paved microenvironments within transit infrastructure.",
+   "nums": [
+    "40°C"
+   ]
+  },
+  {
+   "id": "W7135173559",
+   "y": 2026,
+   "s": "Results demonstrate that standalone elements offer limited reductions in ambient temperature (≤0.55°C) and smaller cooling footprints (~1,650–1,959 m²), whereas hybrid strategies achieve up to 1.93°C cooling with expanded influence areas exceeding 4,180–4,191 m².",
+   "nums": [
+    "0.55°C",
+    "959 m²",
+    "1.93°C",
+    "191 m²"
+   ]
+  },
+  {
+   "id": "W2043711752",
+   "y": 1998,
+   "s": "The maximum temperature difference found between a park and a built-up area was 5.9°C (summer), and the extension of the cool park climate into the built-up area was over 1100 m from the park border.",
+   "nums": [
+    "5.9°C",
+    "1100 m"
+   ]
+  },
+  {
+   "id": "W3096949717",
+   "y": 2020,
+   "s": "When vegetation cover and building cover increased from 0–5% to 95–100%, median values of LST decreased by 4.16 ± 0.76 °C and increased by 4.31 ± 0.69 °C, respectively.",
+   "nums": [
+    "0–5%",
+    "95–100%",
+    "4.16",
+    "0.76 °C",
+    "4.31",
+    "0.69 °C"
+   ]
+  },
+  {
+   "id": "W3096949717",
+   "y": 2020,
+   "s": "LST reduced by 4.10 °C when the mean vegetation height within a 30-m cell increased from 0–2 m to 20–22 m, and by 5.75 °C for 210 m × 210 m patches with the same height range.",
+   "nums": [
+    "4.10 °C",
+    "30-m",
+    "0–2 m",
+    "20–22 m",
+    "5.75 °C",
+    "210 m",
+    "210 m"
+   ]
+  },
+  {
+   "id": "W4392245270",
+   "y": 2024,
+   "s": "On a typical sunny day, significant wall temperature ( T wall ) reduction in GW cases was observed due to the thermal effects of GWs, with maximum values at 1.1 m (above the ground) reached 15.9, 21.2, and 22.1 °C for AR = 1, 1.5, and 2, respectively.",
+   "nums": [
+    "1.1 m",
+    "15.9",
+    "21.2",
+    "22.1 °C",
+    "1.5"
+   ]
+  },
+  {
+   "id": "W4392245270",
+   "y": 2024,
+   "s": "The maximum ground temperature ( T ground ) reductions in GW cases were 1.5, 5.5, and 5.7 °C as AR = 1, 1.5, and 2, respectively.",
+   "nums": [
+    "1.5",
+    "5.5",
+    "5.7 °C",
+    "1.5"
+   ]
+  },
+  {
+   "id": "W4392245270",
+   "y": 2024,
+   "s": "Moreover, GWs maximally reduced air temperature ( T air ) at 0.1 m height (equal to the pedestrian level in real cities) by 0.5, 1.0, and 1.0 °C when AR = 1, 1.5, and 2, respectively.",
+   "nums": [
+    "0.1 m",
+    "0.5",
+    "1.0",
+    "1.0 °C",
+    "1.5"
+   ]
+  },
+  {
+   "id": "W4411059777",
+   "y": 2025,
+   "s": "3 °C less than the unshaded areas.",
+   "nums": [
+    "3 °C"
+   ]
+  },
+  {
+   "id": "W1942098530",
+   "y": 2015,
+   "s": "Park sites remained cooler than built‐up areas, with the most pronounced cooling effect (0.8 °C) on clear, calm days of the warm season.",
+   "nums": [
+    "0.8 °C"
+   ]
+  },
+  {
+   "id": "W2025799929",
+   "y": 2012,
+   "s": "A mean level of daytime cooling of over 1.5 °C was found above the river in spring, but this was reduced in summer when the river water temperature was warmer.",
+   "nums": [
+    "1.5 °C"
+   ]
+  },
+  {
+   "id": "W2127472288",
+   "y": 2013,
+   "s": "The upper and lower limits of 80% acceptability are 26°C WBGT and 20°C WBGT, respectively.",
+   "nums": [
+    "80%",
+    "26°C",
+    "20°C"
+   ]
+  },
+  {
+   "id": "W2166272825",
+   "y": 2011,
+   "s": "The results indicate that the proposed measures contribute to a decrease in local temperatures of up to 2°C for summer conditions.",
+   "nums": [
+    "2°C"
+   ]
+  },
+  {
+   "id": "W2949520231",
+   "y": 2019,
+   "s": "Air temperature peaked locally at 48.5 °C, with a maximum T MRT of 76.4 °C at 15:00 MST in an east-west building canyon.",
+   "nums": [
+    "48.5 °C",
+    "76.4 °C"
+   ]
+  },
+  {
+   "id": "W2949520231",
+   "y": 2019,
+   "s": "Trees reduced afternoon T MRT up to 33.4 °C but exhibited a clear T MRT increase of up to 5 °C after sunset;",
+   "nums": [
+    "33.4 °C",
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W4416784008",
+   "y": 2025,
+   "s": "Across ten optimization runs, the workflow achieved a 68% increase in shade coverage, an 11.5 °C reduction in mean radiant temperature (MRT), and a 72% decrease in the spatial extent of high-risk heat-exposure zones, demonstrating its potential for climate-adaptive street design in hot-arid environments.",
+   "nums": [
+    "68%",
+    "11.5 °C",
+    "72%"
+   ]
+  },
+  {
+   "id": "W4402688128",
+   "y": 2024,
+   "s": "The mean daytime air temperature indicated that the greatest cooling effect was experienced at the lowest level from the ground (at 1 m), and this was consistent for both species across cool, warm, and hot conditions with a significant cooling effect of between 2.3 and 4°C.",
+   "nums": [
+    "1 m",
+    "2.3",
+    "4°C"
+   ]
+  },
+  {
+   "id": "W4402688128",
+   "y": 2024,
+   "s": "Temperature data under the canopy (1 to 5 m from the ground) compared to the air temperature of the grass that was shaded indicated temperature differences of between 2.3 and 7.9°C at 5 m and between 1.9 and 5.6°C at 1 m (for both species) with a bigger reduction attributed to S.",
+   "nums": [
+    "1 to 5 m",
+    "2.3",
+    "7.9°C",
+    "5 m",
+    "1.9",
+    "5.6°C",
+    "1 m"
+   ]
+  },
+  {
+   "id": "W2039196723",
+   "y": 2013,
+   "s": "With respect to both shading devices, the Ta reduction did not exceed 2°C, while PET as a measure for human heat stress was lowered by two thermal sensation steps according to the ASHRAE scale.",
+   "nums": [
+    "2°C"
+   ]
+  },
+  {
+   "id": "W2559768543",
+   "y": 2016,
+   "s": "The modelling results demonstrated that vegetation could evidently reduce near-surface air temperature, with the combination of grass and mature trees achieving as much as 1.5 °C of air temperature decrease compared with the non-green scenario.",
+   "nums": [
+    "1.5 °C"
+   ]
+  },
+  {
+   "id": "W3186108491",
+   "y": 2021,
+   "s": "The annual difference of ΔUTCI7h amounts to 1.5 °C is the same as the annual difference of minimum temperatures (Δtmin).",
+   "nums": [
+    "1.5 °C"
+   ]
+  },
+  {
+   "id": "W3186108491",
+   "y": 2021,
+   "s": "In contrast, the annual differences of ΔPET7h ΔmPET7h are °smaller (0.8 °C and 0.7 °C) and closer to the annual differences of maximum temperatures Δtmax amounted of 0.6 °C.",
+   "nums": [
+    "0.8 °C",
+    "0.7 °C",
+    "0.6 °C"
+   ]
+  },
+  {
+   "id": "W4368405155",
+   "y": 2023,
+   "s": "it recorded 0.5°C reduction in the 2:00 p.m.",
+   "nums": [
+    "0.5°C"
+   ]
+  },
+  {
+   "id": "W4368405155",
+   "y": 2023,
+   "s": "The D2, with highest masses of 20 m height that were located only on the north and west sides of the area blocking the hot north-west prevailing wind, recorded a reduction about 0.9°C compared to the base case.",
+   "nums": [
+    "20 m",
+    "0.9°C"
+   ]
+  },
+  {
+   "id": "W2179877245",
+   "y": 2004,
+   "s": "(This factor strongly affects the nocturnal temperature, and the maximum increase of 0.67°C occurs at 0500 LST.) The larger heat capacity due to the walls decreases the daytime temperature and increases the nocturnal temperature.",
+   "nums": [
+    "0.67°C"
+   ]
+  },
+  {
+   "id": "W2179877245",
+   "y": 2004,
+   "s": "(The maximum increase of 0.39°C occurs at 0600 LST.) The smaller sky-view factor increases the temperature though the day, particularly during the first several hours after sunset.",
+   "nums": [
+    "0.39°C"
+   ]
+  },
+  {
+   "id": "W2179877245",
+   "y": 2004,
+   "s": "(The maximum increase of 0.52°C occurs at midnight.) In urban areas, this factor results in uniform cooling that occurs at a constant rate.",
+   "nums": [
+    "0.52°C"
+   ]
+  },
+  {
+   "id": "W2905637076",
+   "y": 2018,
+   "s": "An appreciable average temperature dip of 7.51 °C and 3.12 °C is observed during summer and winter, respectively for three years near the Sukhna Lake in Chandigarh city.",
+   "nums": [
+    "7.51 °C",
+    "3.12 °C"
+   ]
+  },
+  {
+   "id": "W2905637076",
+   "y": 2018,
+   "s": "An average dip of about 1.57 °C and 1.71 °C is observed during summer and winter, respectively on the right bank of Sabarmati river up to an influence distance of about 200 to 300 m.",
+   "nums": [
+    "1.57 °C",
+    "1.71 °C",
+    "200 to 300 m"
+   ]
+  },
+  {
+   "id": "W2905637076",
+   "y": 2018,
+   "s": "The average fall of temperature near the left bank is about 0.69 °C and 0.65 °C during summer and winter, respectively.",
+   "nums": [
+    "0.69 °C",
+    "0.65 °C"
+   ]
+  },
+  {
+   "id": "W2965247913",
+   "y": 2019,
+   "s": "Results show that the fourth largest city within the Netherlands, Utrecht, has a mean diurnal maximum UHI of 3.1 °C using a 1m SVF resolution.",
+   "nums": [
+    "3.1 °C",
+    "1m"
+   ]
+  },
+  {
+   "id": "W2965247913",
+   "y": 2019,
+   "s": "But, with a 3m SVF resolution the UHI is on average 0.6 °C lower.",
+   "nums": [
+    "3m",
+    "0.6 °C"
+   ]
+  },
+  {
+   "id": "W4411896851",
+   "y": 2025,
+   "s": "The results show that the building temperature was reduced by 4°C, 5.8°C, and 1.2°C for Delhi, Ahmedabad, and Chennai, respectively.",
+   "nums": [
+    "4°C",
+    "5.8°C",
+    "1.2°C"
+   ]
+  },
+  {
+   "id": "W2131249234",
+   "y": 2007,
+   "s": "Fine weather is interpreted as generally sunny weather with an ambient temperature of more than 5 °C, few clouds and no precipitation for a period of 1 year.",
+   "nums": [
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W3009412602",
+   "y": 2020,
+   "s": "Afternoon air temperatures in surrounding spaces were reduced by typically 0.2 °C and the maximum cooling effect was 0.6 °C.",
+   "nums": [
+    "0.2 °C",
+    "0.6 °C"
+   ]
+  },
+  {
+   "id": "W3009412602",
+   "y": 2020,
+   "s": "Typical PET reduction was 0.6 °C, with a maximum of 1.9 °C.",
+   "nums": [
+    "0.6 °C",
+    "1.9 °C"
+   ]
+  },
+  {
+   "id": "W3011617487",
+   "y": 2020,
+   "s": "The increase in the temperature of more than 40°C severely affects health and increases energy expenditures.",
+   "nums": [
+    "40°C"
+   ]
+  },
+  {
+   "id": "W3046305014",
+   "y": 2020,
+   "s": "Observations across diverse urban forms, sky view factors, and seasons covered a wide range of solar radiation regimes from a minimum TMRT of 8.7 °C to a maximum of 84.9 °C.",
+   "nums": [
+    "8.7 °C",
+    "84.9 °C"
+   ]
+  },
+  {
+   "id": "W3046305014",
+   "y": 2020,
+   "s": "Both models produced large simulation errors across regimes with RMSE ranging from 8 °C to 12 °C (RayMan) and 11.2 °C to 16.1 °C (ENVI-met), exceeding a suggested TMRT accuracy of ±5 °C for heat stress studies.",
+   "nums": [
+    "8 °C",
+    "12 °C",
+    "11.2 °C",
+    "16.1 °C",
+    "5 °C"
+   ]
+  },
+  {
+   "id": "W3046305014",
+   "y": 2020,
+   "s": "ENVI-met was unable to resolve intra-domain spatial variability of TMRT and exhibited large errors with RMSE up to 25.5 °C for engineered shade.",
+   "nums": [
+    "25.5 °C"
+   ]
+  },
+  {
+   "id": "W3109214670",
+   "y": 2020,
+   "s": "All the samples were centralized in a biobank located at the West China School of Public Health, Sichuan University and stored at −80°C in cryogenic refrigerators.",
+   "nums": [
+    "80°C"
+   ]
+  }
+ ]
+}

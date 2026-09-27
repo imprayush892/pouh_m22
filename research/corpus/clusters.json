@@ -1,0 +1,254 @@
+[
+ {
+  "id": 0,
+  "n": 108,
+  "top": [
+   "ahmedabad",
+   "india",
+   "walled",
+   "walled_city",
+   "indian",
+   "city_ahmedabad",
+   "ahmedabad_india",
+   "political",
+   "case",
+   "heritage",
+   "development",
+   "year"
+  ]
+ },
+ {
+  "id": 1,
+  "n": 46,
+  "top": [
+   "vendor",
+   "vending",
+   "street_vending",
+   "informal",
+   "street_vendor",
+   "street",
+   "public_space",
+   "public",
+   "space",
+   "economy",
+   "informal_economy",
+   "informality"
+  ]
+ },
+ {
+  "id": 2,
+  "n": 97,
+  "top": [
+   "space",
+   "public",
+   "public_space",
+   "street",
+   "syntax",
+   "space_syntax",
+   "spatial",
+   "design",
+   "activity",
+   "social",
+   "accessibility",
+   "quality"
+  ]
+ },
+ {
+  "id": 3,
+  "n": 85,
+  "top": [
+   "heat",
+   "temperature",
+   "heat_island",
+   "island",
+   "urban_heat",
+   "cooling",
+   "uhi",
+   "surface",
+   "air_temperature",
+   "air",
+   "tree",
+   "climate"
+  ]
+ },
+ {
+  "id": 4,
+  "n": 51,
+  "top": [
+   "landscape",
+   "preference",
+   "visual",
+   "perception",
+   "quality",
+   "aesthetic",
+   "visual_quality",
+   "assessment",
+   "landscape_preference",
+   "forest",
+   "ecological",
+   "visual_preference"
+  ]
+ },
+ {
+  "id": 5,
+  "n": 102,
+  "top": [
+   "network",
+   "vehicle",
+   "application",
+   "morphology",
+   "neural",
+   "learning",
+   "architecture",
+   "building",
+   "traffic",
+   "neural_network",
+   "form",
+   "scale"
+  ]
+ },
+ {
+  "id": 6,
+  "n": 80,
+  "top": [
+   "isovist",
+   "building",
+   "visual",
+   "design",
+   "spatial",
+   "energy",
+   "visibility",
+   "architectural",
+   "space",
+   "facade",
+   "complexity",
+   "generative"
+  ]
+ },
+ {
+  "id": 7,
+  "n": 38,
+  "top": [
+   "virtual",
+   "reality",
+   "immersive",
+   "virtual_reality",
+   "vr",
+   "environment",
+   "immersive_virtual",
+   "smart",
+   "technology",
+   "design",
+   "virtual_environment",
+   "reality_vr"
+  ]
+ },
+ {
+  "id": 8,
+  "n": 63,
+  "top": [
+   "soundscape",
+   "sound",
+   "pleasantness",
+   "acoustic",
+   "noise",
+   "perception",
+   "perceived",
+   "environment",
+   "pleasant",
+   "eventfulness",
+   "quality",
+   "sound_source"
+  ]
+ },
+ {
+  "id": 9,
+  "n": 135,
+  "top": [
+   "health",
+   "neighborhood",
+   "environment",
+   "built_environment",
+   "built",
+   "green",
+   "social",
+   "green_space",
+   "physical",
+   "evidence",
+   "mental",
+   "associated"
+  ]
+ },
+ {
+  "id": 10,
+  "n": 128,
+  "top": [
+   "thermal",
+   "comfort",
+   "thermal_comfort",
+   "outdoor",
+   "outdoor_thermal",
+   "temperature",
+   "tree",
+   "climate",
+   "pet",
+   "microclimate",
+   "heat",
+   "pedestrian"
+  ]
+ },
+ {
+  "id": 11,
+  "n": 54,
+  "top": [
+   "streetscape",
+   "street_view",
+   "street",
+   "segmentation",
+   "semantic",
+   "image",
+   "semantic_segmentation",
+   "view",
+   "view_image",
+   "learning",
+   "perception",
+   "element"
+  ]
+ },
+ {
+  "id": 12,
+  "n": 57,
+  "top": [
+   "pedestrian",
+   "force",
+   "social_force",
+   "simulation",
+   "evacuation",
+   "social",
+   "crowd",
+   "dynamic",
+   "flow",
+   "behavior",
+   "pedestrian_flow",
+   "pedestrian_dynamic"
+  ]
+ },
+ {
+  "id": 13,
+  "n": 60,
+  "top": [
+   "canyon",
+   "street_canyon",
+   "wind",
+   "building",
+   "street",
+   "ratio",
+   "height",
+   "flow",
+   "simulation",
+   "width",
+   "pollutant",
+   "cfd"
+  ]
+ }
+]

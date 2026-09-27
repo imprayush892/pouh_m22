@@ -1,0 +1,12 @@
+{
+ "papers": 1104,
+ "tokens": 241570,
+ "vocab": 24569,
+ "lsaDims": 128,
+ "lsaExplained": 0.272,
+ "clusters": 14,
+ "quantStatements": 325,
+ "relevantForPerception": 602,
+ "extractedFindings": 1376,
+ "built": "2026-09-27"
+}
