@@ -1,0 +1,21 @@
+{
+  "name": "urbanlm-lite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "UrbanLM Lite (Pursuit of Urban Happiness) - deterministic qualitative-to-quantitative public space generator that runs locally in the browser.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "test": "node --test test/",
+    "train": "node scripts/train.js",
+    "site": "node scripts/build-site.js"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
