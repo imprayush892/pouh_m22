@@ -172,3 +172,9 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 #results table { display: block; overflow-x: auto; }
 .tag { font-size: 10px; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 3px; margin-left: 3px; }
 tr.muted td { color: var(--muted); }
+.sitelist { max-height: 320px; overflow: auto; display: grid; gap: 0; }
+.siterow { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.siterow > .small { grid-column: 1 / -1; }
+.grade-good { border-color: var(--good); color: var(--good); }
+.grade-fair { color: var(--ink); }
+.grade-poor { color: var(--muted); }

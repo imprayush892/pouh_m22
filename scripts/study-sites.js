@@ -149,6 +149,7 @@ const RELIABILITY = {
   seating: 'none (benches not in extract)', waterView: 'fair',
 };
 for (const c of Object.values(check)) for (const t of c.terms) t.reliability = RELIABILITY[t.f] || 'unknown';
+writeFileSync(`${dir}/lexicon_check.json`, JSON.stringify(check, null, 1));
 
 // Compact bundle for the app (proof panel column + site list).
 const appBundle = {

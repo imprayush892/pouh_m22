@@ -97,6 +97,7 @@ async function loadDefault() {
   state.evidence = evidence;
   state.matrix = matrix;
   state.studySites = studySites;
+  renderStudySites();
   setSite(site);
 }
 
@@ -408,6 +409,18 @@ function renderProof() {
     ${ev ? `<h4>Evidence from the corpus (${ev.stats.papers} papers, TF-IDF + LSA)</h4>
       <ol class="refs">${refs(ev.evidence[k])}</ol>
       ${topFeatures.map((q) => `<p class="small muted">On ${esc(q.replace('f_', '').toUpperCase())}:</p><ol class="refs">${refs(ev.evidence[q]).split('</li>').slice(0, 3).join('</li>')}</ol>`).join('')}` : ''}`;
+}
+
+function renderStudySites() {
+  const b = state.studySites;
+  if (!b || $('#studySites')) return;
+  const rows = [...b.sites].sort((a, c) => ({ good: 0, fair: 1, poor: 2 })[a.grade] - ({ good: 0, fair: 1, poor: 2 })[c.grade] || a.name.localeCompare(c.name));
+  $('[data-pane="site"]').insertAdjacentHTML('beforeend', `
+    <details class="card" id="studySites"><summary>Research study sites (${b.sites.length})</summary>
+      <p class="small muted">Places named in the corpus papers, geocoded and measured with this engine on OpenStreetMap geometry. OSM grade: good / fair are used to check the lexicon; poor sites are too sparsely mapped.</p>
+      <div class="sitelist">${rows.map((x) => `<div class="siterow"><span>${esc(x.name)}<br><span class="small muted">${esc([x.city, x.country].filter(Boolean).join(', '))} · ${x.papers.length} paper${x.papers.length > 1 ? 's' : ''}</span></span><span class="chip grade-${x.grade}">${x.grade}</span>
+        <span class="small muted">isovist ${fmt(x.median.isovistArea, 0)} m² · SVF ${fmt(x.median.svf, 2)} · H/W ${fmt(x.median.enclosureHW, 2)}</span></div>`).join('')}</div>
+    </details>`);
 }
 
 // Physical condition measured with this engine at geolocated study sites of

@@ -19,7 +19,8 @@
      "p90": 0.128
     },
     "insideCore": 0,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "enclosureHW",
@@ -38,7 +39,8 @@
      "p90": 0.313
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (heights often estimated)"
    },
    {
     "f": "svf",
@@ -57,7 +59,8 @@
      "p90": 0.854
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (street trees rarely mapped)"
    },
    {
     "f": "utci",
@@ -76,7 +79,8 @@
      "p90": 42.989
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (shade from trees missing; common design day)"
    },
    {
     "f": "activeFrontage",
@@ -95,7 +99,8 @@
      "p90": 0.173
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (depends on shop/amenity mapping)"
    },
    {
     "f": "seating",
@@ -114,7 +119,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "none (benches not in extract)"
    },
    {
     "f": "isovistArea",
@@ -133,7 +139,8 @@
      "p90": 13695.191
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "good"
    },
    {
     "f": "roadDist",
@@ -152,7 +159,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "good"
    },
    {
     "f": "sunHours",
@@ -171,7 +179,8 @@
      "p90": 8.119
     },
     "insideCore": 0.5,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (street trees rarely mapped)"
    },
    {
     "f": "isovistPct",
@@ -190,7 +199,8 @@
      "p90": 74.375
     },
     "insideCore": 0.5,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "good"
    },
    {
     "f": "shade",
@@ -209,7 +219,8 @@
      "p90": 0.271
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "waterView",
@@ -228,7 +239,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "fair"
    }
   ]
  },
@@ -252,7 +264,8 @@
      "p90": 0.128
     },
     "insideCore": 0,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "roadDist",
@@ -271,7 +284,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "good"
    },
    {
     "f": "activeFrontage",
@@ -290,7 +304,8 @@
      "p90": 0.173
     },
     "insideCore": 1,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (depends on shop/amenity mapping)"
    },
    {
     "f": "wind",
@@ -309,7 +324,8 @@
      "p90": 1.955
     },
     "insideCore": 1,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (geometry only)"
    },
    {
     "f": "occlusions",
@@ -328,7 +344,8 @@
      "p90": 8.7
     },
     "insideCore": 0.5,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "good"
    },
    {
     "f": "waterView",
@@ -347,7 +364,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair"
    },
    {
     "f": "skylineVar",
@@ -366,7 +384,8 @@
      "p90": 16.348
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (heights often estimated)"
    }
   ]
  },
@@ -390,7 +409,8 @@
      "p90": 0.496
     },
     "insideCore": 0.167,
-    "insideSupport": 0.167
+    "insideSupport": 0.167,
+    "reliability": "fair (depends on shop/amenity mapping)"
    },
    {
     "f": "seating",
@@ -409,7 +429,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "none (benches not in extract)"
    },
    {
     "f": "occlusions",
@@ -428,7 +449,8 @@
      "p90": 10
     },
     "insideCore": 0.833,
-    "insideSupport": 0.833
+    "insideSupport": 0.833,
+    "reliability": "good"
    },
    {
     "f": "isovistArea",
@@ -447,7 +469,8 @@
      "p90": 19827.9
     },
     "insideCore": 0,
-    "insideSupport": 0.167
+    "insideSupport": 0.167,
+    "reliability": "good"
    },
    {
     "f": "enclosureHW",
@@ -466,7 +489,8 @@
      "p90": 0.894
     },
     "insideCore": 0.167,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (heights often estimated)"
    },
    {
     "f": "shade",
@@ -485,7 +509,8 @@
      "p90": 0.286
     },
     "insideCore": 0,
-    "insideSupport": 0.333
+    "insideSupport": 0.333,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "edgeDist",
@@ -504,7 +529,8 @@
      "p90": 27.5
     },
     "insideCore": 0.167,
-    "insideSupport": 0.667
+    "insideSupport": 0.667,
+    "reliability": "good"
    },
    {
     "f": "gvi",
@@ -523,7 +549,8 @@
      "p90": 0.097
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "low (street trees rarely mapped)"
    }
   ]
  },
@@ -567,7 +594,8 @@
      "p90": 44.288
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (shade from trees missing; common design day)"
    },
    {
     "f": "shade",
@@ -586,7 +614,8 @@
      "p90": 0.415
     },
     "insideCore": 0,
-    "insideSupport": 0.167
+    "insideSupport": 0.167,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "wind",
@@ -605,7 +634,8 @@
      "p90": 2.308
     },
     "insideCore": 0.667,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (geometry only)"
    },
    {
     "f": "svf",
@@ -624,7 +654,8 @@
      "p90": 0.957
     },
     "insideCore": 0.25,
-    "insideSupport": 0.333
+    "insideSupport": 0.333,
+    "reliability": "fair (street trees rarely mapped)"
    },
    {
     "f": "gvi",
@@ -643,7 +674,8 @@
      "p90": 0.065
     },
     "insideCore": 0,
-    "insideSupport": 0.25
+    "insideSupport": 0.25,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "waterView",
@@ -662,7 +694,8 @@
      "p90": 0.038
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "fair"
    },
    {
     "f": "enclosureHW",
@@ -681,7 +714,8 @@
      "p90": 1.483
     },
     "insideCore": 0,
-    "insideSupport": 0.25
+    "insideSupport": 0.25,
+    "reliability": "fair (heights often estimated)"
    },
    {
     "f": "meanHeight",
@@ -700,7 +734,8 @@
      "p90": 41.868
     },
     "insideCore": 0.25,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (heights often estimated)"
    },
    {
     "f": "sunHours",
@@ -719,7 +754,8 @@
      "p90": 11
     },
     "insideCore": 0.25,
-    "insideSupport": 0.583
+    "insideSupport": 0.583,
+    "reliability": "fair (street trees rarely mapped)"
    }
   ]
  },
@@ -747,7 +783,8 @@
      "p90": 0
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "none (benches not in extract)"
    },
    {
     "f": "edgeDist",
@@ -766,7 +803,8 @@
      "p90": 28.4
     },
     "insideCore": 0.2,
-    "insideSupport": 0.6
+    "insideSupport": 0.6,
+    "reliability": "good"
    },
    {
     "f": "shade",
@@ -785,7 +823,8 @@
      "p90": 0.172
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "activeFrontage",
@@ -804,7 +843,8 @@
      "p90": 0.391
     },
     "insideCore": 0.2,
-    "insideSupport": 0.4
+    "insideSupport": 0.4,
+    "reliability": "fair (depends on shop/amenity mapping)"
    },
    {
     "f": "isovistArea",
@@ -823,7 +863,8 @@
      "p90": 19888.834
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "good"
    },
    {
     "f": "wind",
@@ -842,7 +883,8 @@
      "p90": 2.308
     },
     "insideCore": 0.4,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "fair (geometry only)"
    }
   ]
  },
@@ -866,7 +908,8 @@
      "p90": 84.167
     },
     "insideCore": 0.5,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "good"
    },
    {
     "f": "sunHours",
@@ -885,7 +928,8 @@
      "p90": 8.6
     },
     "insideCore": 0,
-    "insideSupport": 0.5
+    "insideSupport": 0.5,
+    "reliability": "fair (street trees rarely mapped)"
    },
    {
     "f": "shade",
@@ -904,7 +948,8 @@
      "p90": 0.272
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (street trees rarely mapped)"
    },
    {
     "f": "openness",
@@ -923,7 +968,8 @@
      "p90": 0.321
     },
     "insideCore": 1,
-    "insideSupport": 1
+    "insideSupport": 1,
+    "reliability": "good"
    },
    {
     "f": "utci",
@@ -942,7 +988,8 @@
      "p90": 42.306
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (shade from trees missing; common design day)"
    },
    {
     "f": "gvi",
@@ -961,7 +1008,8 @@
      "p90": 0.043
     },
     "insideCore": 0,
-    "insideSupport": 0
+    "insideSupport": 0,
+    "reliability": "low (street trees rarely mapped)"
    }
   ]
  }

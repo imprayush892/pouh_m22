@@ -4,7 +4,7 @@ How qualitative feelings (*happy, calm, lively …*) are turned into quantitativ
 parameters of physical space, and what each number in the app rests on.
 
 Contents: 1 · Sources · 2 · POUH portfolio data · 3 · Literature corpus · 4 · Conversion
-methods catalogue · 5 · Keyword lexicon · 5b · What the corpus says · 6 · Metrics as implemented · 7 · Model ·
+methods catalogue · 5 · Keyword lexicon · 5b · What the corpus says · 5c · Study sites · 6 · Metrics as implemented · 7 · Model ·
 8 · Assumptions and limitations · 9 · Roadmap (probabilistic model, ABM, neural) · 10 · References
 
 ---
@@ -335,6 +335,63 @@ Every abstract was read by an LLM with a fixed JSON schema (`research/scripts/ex
 **Parameters the literature links to perception but the engine cannot compute yet** (findings count; these are the next metrics to add): natural sounds 22 · people density presence 20 · street connectivity 18 · space syntax integration 16 · accessibility distance 15 · land use mix 11 · street orientation 10 · humidity 8 · surface albedo 8 · urban green space 8 · paving material 8 · soundscape pleasantness 7 · facade colour 7 · visibility integration 6 · urban compactness 6 · vacant lot greening 6 · vehicles parking 5 · distance from park 5 · neighborhood density 5 · sidewalk width 5.
 
 Caveats: this is abstract-level extraction, not full-text meta-analysis. Direction counts are not effect sizes, and each finding carries a quote, so it can be verified before being cited.
+
+
+## 5c · Study sites: the physical condition of researched places
+
+The corpus papers studied real places, so the same engine can measure those places and set the geometry against what the papers found.
+
+1. **Locate.** An AI model read each of the 602 relevant abstracts and extracted the most specific study location. 394 papers are empirical; they name 74 sites and 66 districts, and the rest give only a city or country.
+2. **Geocode.** Nominatim (OpenStreetMap) placed those names; hits that resolved to a whole city were rejected. That leaves **49 sites** in 25 countries.
+3. **Fetch.** OSM data within 200 m of each site: buildings (height from tags, else estimated), streets, trees and tree rows, woods, green, water, shops and amenities.
+4. **Measure.** OSM → engine site model (`src/engine/osm.js`) → raster → the 21 parameters, sampled every 4 m within 60 m of the geocoded point, on the same design day and air temperature everywhere. The values therefore compare form, not climate.
+5. **Join.** Each (paper, site) becomes one data vector in `research/sites/study_vectors.jsonl`: the parameter medians plus that paper's methods, outcomes and findings.
+6. **Check the lexicon.** For each keyword term, the values measured at sites of papers on that keyword are compared with the term's full-score range (`research/sites/lexicon_check.json`). The app shows this as the *Study sites* column in the proof panel.
+
+**OSM completeness gate.** Sites are graded good (17), fair (8) and poor (24). Good means at least 40 buildings and at least 15 % built coverage within 100 m; fair means at least 15 buildings and at least 8 %. Poor sites are kept but excluded from comparisons, because missing buildings make a dense place look open (Manek Chowk itself has only 6 mapped buildings within 200 m).
+
+**What it shows so far (good + fair sites):**
+
+| Keyword | Sites | Parameter | Measured median (p25–p75) | Lexicon full-score range | Inside |
+|---|---|---|---|---|---|
+| happy | 2 | enclosureHW | 0.241 (0.197–0.286) | 0.5–1.5 | 0 % |
+| happy | 2 | svf | 0.779 (0.732–0.826) | 0.3–0.65 | 0 % |
+| happy | 2 | activeFrontage | 0.096 (0.048–0.144) | ≥ 0.35 | 0 % |
+| happy | 2 | isovistArea | 10271.143 (8131.113–12411.173) | 300–2500 | 0 % |
+| calm | 2 | roadDist | 0 (0–0) | ≥ 20 | 0 % |
+| calm | 2 | activeFrontage | 0.096 (0.048–0.144) | ≤ 0.3 | 100 % |
+| calm | 2 | wind | 1.64 (1.443–1.837) | ≤ 2.2 | 100 % |
+| calm | 2 | occlusions | 7.5 (6.75–8.25) | ≤ 6 | 50 % |
+| lively | 6 | activeFrontage | 0.015 (0–0.151) | ≥ 0.55 | 17 % |
+| lively | 6 | occlusions | 8 (7–9) | 7–16 | 83 % |
+| lively | 6 | isovistArea | 15115.724 (12638.856–19018.801) | 500–3000 | 0 % |
+| lively | 6 | enclosureHW | 0.259 (0.142–0.377) | 0.6–1.6 | 17 % |
+| comfortable | 12 | wind | 1.48 (0.668–2.308) | 1–3 | 67 % |
+| comfortable | 12 | svf | 0.839 (0.635–0.93) | 0.2–0.5 | 25 % |
+| comfortable | 12 | waterView | 0 (0–0) | ≥ 0.5 | 0 % |
+| comfortable | 12 | enclosureHW | 0.237 (0.183–0.676) | ≥ 2.5 | 0 % |
+| sociable | 5 | edgeDist | 13 (8–23) | ≤ 6 | 20 % |
+| sociable | 5 | activeFrontage | 0 (0–0.192) | ≥ 0.3 | 20 % |
+| sociable | 5 | isovistArea | 12725.937 (6299.319–19523.231) | 250–2000 | 0 % |
+| sociable | 5 | wind | 2.308 (1.818–2.308) | ≤ 2.2 | 40 % |
+| active | 2 | isovistPct | 79.167 (76.042–82.292) | 60–85 | 50 % |
+| active | 2 | sunHours | 7 (6–8) | 10–12 | 0 % |
+| active | 2 | openness | 0.271 (0.239–0.302) | ≥ 0.2 | 100 % |
+
+**Reading.** The places researchers study are much more open than the lexicon assumes: median isovist is about 12,000–22,000 m², SVF about 0.8 and H/W about 0.2. Many are parks, squares, campuses and avenues, while the lexicon leans on street canyons and the POUH pol context. This is a sampling fact, not yet a reason to move the ranges: the samples per keyword are small (2–12 sites) and the papers report *that* an effect exists at a site, not that the site is optimal.
+
+**Limits.**
+
+- Abstracts rarely give exact sites; full texts would multiply the sample.
+- Street trees and benches are rarely mapped in OSM, so greenery, shade, seating and UTCI measured from OSM are flagged low reliability and not compared.
+- Building heights are often estimated (3 storeys).
+- A site geocoded to a street puts the sample centre on the carriageway, so distance-to-road reads about 0 there.
+
+**Next.**
+
+- Full-text location extraction.
+- Tree canopy from open canopy-height rasters instead of OSM.
+- Once samples reach roughly 30 or more per keyword, fit the tree models on these vectors (direction-labelled) alongside the prior, turning the check into calibration.
 
 ## 6 · Metrics as implemented (`src/engine/metrics.js`)
 
