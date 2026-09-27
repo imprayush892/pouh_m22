@@ -30,6 +30,14 @@ const state = {
 };
 
 const viewer = new Viewer($('#viewer'));
+// 3D background follows the page theme (light, dark, or the viewer's explicit choice).
+function syncSceneTheme() {
+  const c = getComputedStyle(document.documentElement).getPropertyValue('--scene').trim();
+  if (c) viewer.scene.background.set(c);
+}
+syncSceneTheme();
+matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', syncSceneTheme);
+new MutationObserver(syncSceneTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 const worker = new Worker(new URL('./worker.js', import.meta.url), { type: 'module' });
 const setStatus = (t) => { $('#status').textContent = t; };
 
