@@ -37,11 +37,13 @@ export const SOURCES = {
   matsuda2002: 'Matsuda et al. (2002) Collective form of buildings and outdoor spaces in Manek Chowk area, Ahmedabad.',
 };
 
+import { EVIDENCE_LEXICON } from './evidence-lexicon.js';
+
 const T = (a, b, c, d) => [a, b, c, d];
 const INF = 1e9;
 
 // weight = relative importance inside the keyword (normalised at runtime).
-export const KEYWORDS = {
+export const KEYWORDS_CURATED = {
   happy: {
     label: 'Happy / joyful',
     blurb: 'The POUH target feeling: a green, comfortable, moderately enclosed space with people-oriented edges.',
@@ -175,7 +177,7 @@ export const KEYWORDS = {
   },
 };
 
-KEYWORDS.active = {
+KEYWORDS_CURATED.active = {
   label: 'Active / playful',
   blurb: 'Room to move and play: open, sunny, visible spaces (POUH gym + plaza + kids combination).',
   terms: [
@@ -186,6 +188,20 @@ KEYWORDS.active = {
     { f: 'utci', t: T(-INF, -INF, 34, 40), w: 0.5, src: ['brode2012'] },
   ],
 };
+
+// Final lexicon = curated terms (core papers + POUH) re-weighted by the
+// corpus evidence matrix, plus terms the corpus supports that were missing.
+// See scripts/apply-evidence.js and research/RESEARCH.md § 5b.
+export const KEYWORDS = Object.fromEntries(Object.entries(KEYWORDS_CURATED).map(([k, def]) => {
+  const ev = EVIDENCE_LEXICON[k];
+  if (!ev) return [k, def];
+  const terms = def.terms.map((t) => {
+    const a = ev.adjust.find((x) => x.f === t.f);
+    return a ? { ...t, w: +(t.w * a.factor).toFixed(3), corpus: { support: a.support, against: a.against, conflict: a.conflict, papers: a.papers } } : t;
+  });
+  for (const x of ev.added) terms.push({ f: x.f, t: x.t, w: x.w, src: x.src, corpus: { support: x.n, against: 0, added: true, consistency: x.consistency, params: x.params, papers: x.papers } });
+  return [k, { ...def, terms }];
+}));
 
 export const KEYWORD_KEYS = Object.keys(KEYWORDS);
 
@@ -218,5 +234,6 @@ export function explainPrior(keyword, m) {
     membership: trapezoid(m[term.f], term.t),
     weight: term.w / wsum,
     sources: term.src,
+    corpus: term.corpus || null,
   }));
 }

@@ -76,15 +76,17 @@ worker.onmessage = (e) => {
 // ------------------------------------------------------------------ site
 async function loadDefault() {
   setStatus('Loading trial site…');
-  const [site, model, rows, evidence] = await Promise.all([
+  const [site, model, rows, evidence, matrix] = await Promise.all([
     fetch('./data/site-manek-chowk.json').then((r) => r.json()),
     fetch('./models/gbt.json').then((r) => r.json()),
     fetch('./models/training-rows.json').then((r) => r.json()),
     fetch('./data/evidence.json').then((r) => r.json()).catch(() => null),
+    fetch('./data/evidence-matrix.json').then((r) => r.json()).catch(() => null),
   ]);
   state.model = model;
   state.trainingRows = rows.rows;
   state.evidence = evidence;
+  state.matrix = matrix;
   setSite(site);
 }
 
@@ -389,11 +391,33 @@ function renderProof() {
     <p class="small muted">Contribution of each parameter to the score (Saabas path attribution; bars sum to prediction − ${fmt(p.model?.bias, 0)} baseline).</p>
     ${(p.model?.items || []).slice(0, 8).map((d) => `<div class="contrib"><span>${esc(FEATURE[d.feature].label)}</span><div class="axis"><div class="${d.contribution >= 0 ? 'pos' : 'neg'}" style="width:${(Math.abs(d.contribution) / maxC) * 50}%"></div></div><span class="num">${d.contribution >= 0 ? '+' : ''}${fmt(d.contribution, 1)}</span></div>`).join('')}
     <h4>Qualitative → quantitative rules</h4>
-    <table><tr><th>Parameter</th><th class="num">Value</th><th class="num">Target</th><th class="num">Fit</th><th>Sources</th></tr>
-    ${p.prior.map((t) => `<tr><td>${esc(FEATURE[t.feature].label)}</td><td class="num">${fmt(t.value, 2)}</td><td class="num">${rangeText(t.target)}</td><td class="num ${t.membership > 0.7 ? 'ok' : t.membership < 0.3 ? 'no' : ''}">${fmt(t.membership * 100, 0)}%</td><td class="small">${t.sources.map((s) => `<span title="${esc(SOURCES[s] || s)}">${esc(s)}</span>`).join(', ')}</td></tr>`).join('')}</table>
+    <p class="small muted">Weight = curated weight × corpus factor. “Corpus” = papers (of ${state.matrix?.summary?.relevant ?? '–'} relevant) whose findings point the same way / the opposite way.</p>
+    <table><tr><th>Parameter</th><th class="num">Value</th><th class="num">Target</th><th class="num">Fit</th><th class="num">Weight</th><th class="num">Corpus</th><th>Sources</th></tr>
+    ${p.prior.map((t) => `<tr><td>${esc(FEATURE[t.feature].label)}${t.corpus?.added ? ' <sup class="tag">corpus</sup>' : ''}</td><td class="num">${fmt(t.value, 2)}</td><td class="num">${rangeText(t.target)}</td><td class="num ${t.membership > 0.7 ? 'ok' : t.membership < 0.3 ? 'no' : ''}">${fmt(t.membership * 100, 0)}%</td><td class="num">${fmt(t.weight * 100, 0)}%</td><td class="num ${t.corpus?.conflict ? 'no' : ''}">${t.corpus ? `${fmt(t.corpus.support, 0)}${t.corpus.against ? ` / ${t.corpus.against}` : ''}${t.corpus.conflict ? ' ⚠' : ''}` : '–'}</td><td class="small">${t.sources.map((s) => `<span title="${esc(SOURCES[s] || s)}">${esc(s)}</span>`).join(', ')}</td></tr>`).join('')}</table>
+    ${corpusSection(k)}
     ${ev ? `<h4>Evidence from the corpus (${ev.stats.papers} papers, TF-IDF + LSA)</h4>
       <ol class="refs">${refs(ev.evidence[k])}</ol>
       ${topFeatures.map((q) => `<p class="small muted">On ${esc(q.replace('f_', '').toUpperCase())}:</p><ol class="refs">${refs(ev.evidence[q]).split('</li>').slice(0, 3).join('</li>')}</ol>`).join('')}` : ''}`;
+}
+
+// What the mined corpus says about a keyword, including parameters the
+// engine cannot compute yet (roadmap for new metrics).
+const PARAM_LABEL = (p) => p.replace(/^other:/, '').replace(/_/g, ' ');
+function corpusSection(k) {
+  const m = state.matrix;
+  const rows = m?.keywords?.[k];
+  if (!rows?.length) return '';
+  const cite = (id) => {
+    const pp = m.papers[id];
+    if (!pp) return '';
+    const [t, y, doi, a] = pp;
+    const label = `${a ? a.split(' ').slice(-1)[0] + ' ' : ''}${y ?? ''}`;
+    return doi ? `<a href="https://doi.org/${esc(doi)}" target="_blank" rel="noopener" title="${esc(t)}">${esc(label)}</a>` : `<span title="${esc(t)}">${esc(label)}</span>`;
+  };
+  return `<h4>What the ${m.summary.papers} papers say about “${esc(KEYWORDS[k].label)}”</h4>
+    <p class="small muted">LLM-extracted findings from ${m.summary.relevant} relevant abstracts (${m.summary.findings} findings). + / − / ∿ = papers finding a positive, negative or nonlinear effect. Grey rows are not measured by the engine yet.</p>
+    <table><tr><th>Parameter</th><th class="num">+</th><th class="num">−</th><th class="num">∿</th><th>Papers</th></tr>
+    ${rows.slice(0, 12).map((r) => `<tr class="${r.engine ? '' : 'muted'}"><td>${esc(PARAM_LABEL(r.p))}${r.engine ? '' : ' <span class="small">(not measured yet)</span>'}${r.q?.[0] ? `<div class="small muted">“${esc(r.q[0].q)}”</div>` : ''}</td><td class="num">${r.pos}</td><td class="num">${r.neg}</td><td class="num">${r.nl}</td><td class="small">${r.papers.slice(0, 3).map(cite).join(', ')}</td></tr>`).join('')}</table>`;
 }
 
 function rangeText([a, b, c, d]) {

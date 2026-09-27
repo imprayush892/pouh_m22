@@ -150,3 +150,6 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
   .legend { font-size: 11px; max-width: calc(100% - 24px); bottom: auto; top: 8px; }
   .heatbar { bottom: 8px; right: 8px; }
 }
+#results table { display: block; overflow-x: auto; }
+.tag { font-size: 10px; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 3px; margin-left: 3px; }
+tr.muted td { color: var(--muted); }

@@ -10,7 +10,8 @@
     "preview": "vite preview --host",
     "test": "node --test test/*.test.js",
     "train": "node scripts/train.js",
-    "site": "node scripts/build-site.js"
+    "site": "node scripts/build-site.js",
+    "evidence": "node scripts/apply-evidence.js"
   },
   "dependencies": {
     "three": "^0.180.0"

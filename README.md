@@ -45,6 +45,8 @@ Rebuild data and models:
 npm run site         # default site from data/osm_streets_manek_chowk.json
 npm run train        # keyword tree models → public/models/
 python research/scripts/build_corpus.py --out research/corpus   # literature corpus (needs internet)
+python research/scripts/extract_findings.py …; python research/scripts/aggregate_evidence.py …   # findings → matrix
+npm run evidence     # evidence matrix → lexicon weights (then npm run train)
 ```
 
 ## How it works
@@ -73,7 +75,8 @@ keywords + targets ─► optimizer.js (seeded GA)
   retrain on-device.
 
 The research basis is in **[research/RESEARCH.md](research/RESEARCH.md)**. It covers the
-POUH data, the corpus (1,104 papers, tokenised and vectorised), a catalogue of 19
+POUH data, the corpus (1,104 papers, tokenised and vectorised, with 1,376 LLM-extracted
+parameter → outcome findings that re-weight the lexicon), a catalogue of 19
 qualitative-to-quantitative methods, every keyword's parameter ranges and sources, the
 assumptions, and the roadmap to probabilistic models, agent-based simulation and a neural
 surrogate.
