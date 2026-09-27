@@ -1,0 +1,968 @@
+{
+ "happy": {
+  "sites": 2,
+  "terms": [
+   {
+    "f": "gvi",
+    "target": [
+     0.08,
+     0.18,
+     0.4,
+     0.55
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.125,
+     "p25": 0.126,
+     "median": 0.127,
+     "p75": 0.127,
+     "p90": 0.128
+    },
+    "insideCore": 0,
+    "insideSupport": 1
+   },
+   {
+    "f": "enclosureHW",
+    "target": [
+     0.2,
+     0.5,
+     1.5,
+     3
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.17,
+     "p25": 0.197,
+     "median": 0.241,
+     "p75": 0.286,
+     "p90": 0.313
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "svf",
+    "target": [
+     0.15,
+     0.3,
+     0.65,
+     0.85
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.704,
+     "p25": 0.732,
+     "median": 0.779,
+     "p75": 0.826,
+     "p90": 0.854
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "utci",
+    "target": [
+     -1000000000,
+     -1000000000,
+     32,
+     38
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 41.607,
+     "p25": 41.866,
+     "median": 42.298,
+     "p75": 42.73,
+     "p90": 42.989
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "activeFrontage",
+    "target": [
+     0.1,
+     0.35,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.019,
+     "p25": 0.048,
+     "median": 0.096,
+     "p75": 0.144,
+     "p90": 0.173
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "seating",
+    "target": [
+     0,
+     3,
+     30,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 1
+   },
+   {
+    "f": "isovistArea",
+    "target": [
+     80,
+     300,
+     2500,
+     6000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 6847.095,
+     "p25": 8131.113,
+     "median": 10271.143,
+     "p75": 12411.173,
+     "p90": 13695.191
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "roadDist",
+    "target": [
+     2,
+     12,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "sunHours",
+    "target": [
+     5.5,
+     6.9,
+     10.5,
+     12
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 6.569,
+     "p25": 6.86,
+     "median": 7.344,
+     "p75": 7.829,
+     "p90": 8.119
+    },
+    "insideCore": 0.5,
+    "insideSupport": 1
+   },
+   {
+    "f": "isovistPct",
+    "target": [
+     4,
+     24,
+     56,
+     90
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 52.708,
+     "p25": 56.771,
+     "median": 63.541,
+     "p75": 70.312,
+     "p90": 74.375
+    },
+    "insideCore": 0.5,
+    "insideSupport": 1
+   },
+   {
+    "f": "shade",
+    "target": [
+     0.4,
+     0.5,
+     0.91,
+     1.01
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.149,
+     "p25": 0.172,
+     "median": 0.21,
+     "p75": 0.248,
+     "p90": 0.271
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "waterView",
+    "target": [
+     0.1,
+     0.5,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   }
+  ]
+ },
+ "calm": {
+  "sites": 2,
+  "terms": [
+   {
+    "f": "gvi",
+    "target": [
+     0.12,
+     0.25,
+     0.6,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.125,
+     "p25": 0.126,
+     "median": 0.127,
+     "p75": 0.127,
+     "p90": 0.128
+    },
+    "insideCore": 0,
+    "insideSupport": 1
+   },
+   {
+    "f": "roadDist",
+    "target": [
+     5,
+     20,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "activeFrontage",
+    "target": [
+     -1000000000,
+     -1000000000,
+     0.3,
+     0.7
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.019,
+     "p25": 0.048,
+     "median": 0.096,
+     "p75": 0.144,
+     "p90": 0.173
+    },
+    "insideCore": 1,
+    "insideSupport": 1
+   },
+   {
+    "f": "wind",
+    "target": [
+     -1000000000,
+     -1000000000,
+     2.2,
+     3.3
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 1.325,
+     "p25": 1.443,
+     "median": 1.64,
+     "p75": 1.837,
+     "p90": 1.955
+    },
+    "insideCore": 1,
+    "insideSupport": 1
+   },
+   {
+    "f": "occlusions",
+    "target": [
+     -1000000000,
+     -1000000000,
+     6,
+     14
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 6.3,
+     "p25": 6.75,
+     "median": 7.5,
+     "p75": 8.25,
+     "p90": 8.7
+    },
+    "insideCore": 0.5,
+    "insideSupport": 1
+   },
+   {
+    "f": "waterView",
+    "target": [
+     0,
+     0.1,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 1
+   },
+   {
+    "f": "skylineVar",
+    "target": [
+     -1000000000,
+     -1000000000,
+     8,
+     16
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 12.655,
+     "p25": 13.348,
+     "median": 14.502,
+     "p75": 15.655,
+     "p90": 16.348
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   }
+  ]
+ },
+ "lively": {
+  "sites": 6,
+  "terms": [
+   {
+    "f": "activeFrontage",
+    "target": [
+     0.25,
+     0.55,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 0,
+     "p25": 0,
+     "median": 0.015,
+     "p75": 0.151,
+     "p90": 0.496
+    },
+    "insideCore": 0.167,
+    "insideSupport": 0.167
+   },
+   {
+    "f": "seating",
+    "target": [
+     1,
+     6,
+     30,
+     1000000000
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "occlusions",
+    "target": [
+     3,
+     7,
+     16,
+     26
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 4,
+     "p25": 7,
+     "median": 8,
+     "p75": 9,
+     "p90": 10
+    },
+    "insideCore": 0.833,
+    "insideSupport": 0.833
+   },
+   {
+    "f": "isovistArea",
+    "target": [
+     150,
+     500,
+     3000,
+     7000
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 9300.456,
+     "p25": 12638.856,
+     "median": 15115.724,
+     "p75": 19018.801,
+     "p90": 19827.9
+    },
+    "insideCore": 0,
+    "insideSupport": 0.167
+   },
+   {
+    "f": "enclosureHW",
+    "target": [
+     0.3,
+     0.6,
+     1.6,
+     3
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 0.101,
+     "p25": 0.142,
+     "median": 0.259,
+     "p75": 0.377,
+     "p90": 0.894
+    },
+    "insideCore": 0.167,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "shade",
+    "target": [
+     0.2,
+     0.45,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 0,
+     "p25": 0,
+     "median": 0.071,
+     "p75": 0.25,
+     "p90": 0.286
+    },
+    "insideCore": 0,
+    "insideSupport": 0.333
+   },
+   {
+    "f": "edgeDist",
+    "target": [
+     -1000000000,
+     -1000000000,
+     8,
+     20
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 9,
+     "p25": 12.25,
+     "median": 15.5,
+     "p75": 21.75,
+     "p90": 27.5
+    },
+    "insideCore": 0.167,
+    "insideSupport": 0.667
+   },
+   {
+    "f": "gvi",
+    "target": [
+     0.06,
+     0.3,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 6,
+     "p10": 0,
+     "p25": 0.012,
+     "median": 0.057,
+     "p75": 0.065,
+     "p90": 0.097
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   }
+  ]
+ },
+ "safe": {
+  "sites": 0,
+  "terms": []
+ },
+ "intimate": {
+  "sites": 0,
+  "terms": []
+ },
+ "spacious": {
+  "sites": 0,
+  "terms": []
+ },
+ "restorative": {
+  "sites": 0,
+  "terms": []
+ },
+ "mysterious": {
+  "sites": 0,
+  "terms": []
+ },
+ "comfortable": {
+  "sites": 12,
+  "terms": [
+   {
+    "f": "utci",
+    "target": [
+     -1000000000,
+     -1000000000,
+     30,
+     36
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 40.237,
+     "p25": 42.366,
+     "median": 44.195,
+     "p75": 44.25,
+     "p90": 44.288
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "shade",
+    "target": [
+     0.35,
+     0.65,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0.179,
+     "p90": 0.415
+    },
+    "insideCore": 0,
+    "insideSupport": 0.167
+   },
+   {
+    "f": "wind",
+    "target": [
+     0.4,
+     1,
+     3,
+     4.5
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0.597,
+     "p25": 0.668,
+     "median": 1.48,
+     "p75": 2.308,
+     "p90": 2.308
+    },
+    "insideCore": 0.667,
+    "insideSupport": 1
+   },
+   {
+    "f": "svf",
+    "target": [
+     0.05,
+     0.2,
+     0.5,
+     0.75
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0.389,
+     "p25": 0.635,
+     "median": 0.839,
+     "p75": 0.93,
+     "p90": 0.957
+    },
+    "insideCore": 0.25,
+    "insideSupport": 0.333
+   },
+   {
+    "f": "gvi",
+    "target": [
+     0.06,
+     0.3,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0,
+     "p25": 0,
+     "median": 0.001,
+     "p75": 0.033,
+     "p90": 0.065
+    },
+    "insideCore": 0,
+    "insideSupport": 0.25
+   },
+   {
+    "f": "waterView",
+    "target": [
+     0.1,
+     0.5,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0.038
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "enclosureHW",
+    "target": [
+     0.5,
+     2.5,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 0.169,
+     "p25": 0.183,
+     "median": 0.237,
+     "p75": 0.676,
+     "p90": 1.483
+    },
+    "insideCore": 0,
+    "insideSupport": 0.25
+   },
+   {
+    "f": "meanHeight",
+    "target": [
+     4,
+     20,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 9.6,
+     "p25": 9.6,
+     "median": 13.124,
+     "p75": 21.93,
+     "p90": 41.868
+    },
+    "insideCore": 0.25,
+    "insideSupport": 1
+   },
+   {
+    "f": "sunHours",
+    "target": [
+     -1000000000,
+     -1000000000,
+     6,
+     10.8
+    ],
+    "measured": {
+     "n": 12,
+     "p10": 4.1,
+     "p25": 7.25,
+     "median": 10,
+     "p75": 11,
+     "p90": 11
+    },
+    "insideCore": 0.25,
+    "insideSupport": 0.583
+   }
+  ]
+ },
+ "legible": {
+  "sites": 0,
+  "terms": []
+ },
+ "sociable": {
+  "sites": 5,
+  "terms": [
+   {
+    "f": "seating",
+    "target": [
+     2,
+     8,
+     30,
+     1000000000
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "edgeDist",
+    "target": [
+     -1000000000,
+     1,
+     6,
+     15
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 6.8,
+     "p25": 8,
+     "median": 13,
+     "p75": 23,
+     "p90": 28.4
+    },
+    "insideCore": 0.2,
+    "insideSupport": 0.6
+   },
+   {
+    "f": "shade",
+    "target": [
+     0.3,
+     0.6,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0,
+     "p90": 0.172
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "activeFrontage",
+    "target": [
+     0.1,
+     0.3,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 0,
+     "p25": 0,
+     "median": 0,
+     "p75": 0.192,
+     "p90": 0.391
+    },
+    "insideCore": 0.2,
+    "insideSupport": 0.4
+   },
+   {
+    "f": "isovistArea",
+    "target": [
+     100,
+     250,
+     2000,
+     5000
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 6114.377,
+     "p25": 6299.319,
+     "median": 12725.937,
+     "p75": 19523.231,
+     "p90": 19888.834
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "wind",
+    "target": [
+     -1000000000,
+     -1000000000,
+     2.2,
+     3.3
+    ],
+    "measured": {
+     "n": 5,
+     "p10": 1.475,
+     "p25": 1.818,
+     "median": 2.308,
+     "p75": 2.308,
+     "p90": 2.308
+    },
+    "insideCore": 0.4,
+    "insideSupport": 1
+   }
+  ]
+ },
+ "active": {
+  "sites": 2,
+  "terms": [
+   {
+    "f": "isovistPct",
+    "target": [
+     40,
+     60,
+     85,
+     100
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 74.167,
+     "p25": 76.042,
+     "median": 79.167,
+     "p75": 82.292,
+     "p90": 84.167
+    },
+    "insideCore": 0.5,
+    "insideSupport": 1
+   },
+   {
+    "f": "sunHours",
+    "target": [
+     8,
+     10,
+     12,
+     13
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 5.4,
+     "p25": 6,
+     "median": 7,
+     "p75": 8,
+     "p90": 8.6
+    },
+    "insideCore": 0,
+    "insideSupport": 0.5
+   },
+   {
+    "f": "shade",
+    "target": [
+     0.3,
+     0.45,
+     0.6,
+     0.8
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.157,
+     "p25": 0.179,
+     "median": 0.214,
+     "p75": 0.25,
+     "p90": 0.272
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "openness",
+    "target": [
+     0.05,
+     0.2,
+     1,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.221,
+     "p25": 0.239,
+     "median": 0.271,
+     "p75": 0.302,
+     "p90": 0.321
+    },
+    "insideCore": 1,
+    "insideSupport": 1
+   },
+   {
+    "f": "utci",
+    "target": [
+     -1000000000,
+     -1000000000,
+     34,
+     40
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 41.062,
+     "p25": 41.295,
+     "median": 41.684,
+     "p75": 42.072,
+     "p90": 42.306
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   },
+   {
+    "f": "gvi",
+    "target": [
+     0.06,
+     0.3,
+     1000000000,
+     1000000000
+    ],
+    "measured": {
+     "n": 2,
+     "p10": 0.005,
+     "p25": 0.012,
+     "median": 0.024,
+     "p75": 0.036,
+     "p90": 0.043
+    },
+    "insideCore": 0,
+    "insideSupport": 0
+   }
+  ]
+ }
+}
